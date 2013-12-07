@@ -19,7 +19,7 @@ body {
 	font-family: Helvetica, 'microsoft yahei', Arial, sans-serif;
 	color: #6b737a;
 }
-body#feature a#featureLink {
+body#about_us a#about_usLink {
 	background: #d8e5f1;
 }
 #mainContent {
@@ -115,108 +115,12 @@ body#feature a#featureLink {
 	color: #fff;
 	background: #1abc6e;
 }
-/*********************************************************************mainContent***********************************/
-
-.mainContent {
-	width: 700px;
-	float: left;
-	padding: 10px;
-	border: 1px #164E97 solid;
-	border-top: 2px #164E97 solid;
+body#download a#downloadLink {
+	background: #d8e5f1;
 }
-.info table{
-	color:#d98734;
-	text-align: center;
-	width: 700px;
-	margin:0 auto;
-	font-size: 22px;
-	line-height: 30px;
-	font-family: "楷体";
-	border: 1px #fff solid;
-}
-.info table tr td{
-	border: 1px #fff solid;
-}
-/*
-.info table {
-	width: 300px;
-	text-align: center;
-}*/
-.hosting {
-	width: 298px;
-	height: 110px;
-	background: url(images/hosting_header.png) top  no-repeat ;
-	margin-top: 90px;
-}
-.one {
-	width: 298px;
-	float: left;
-	margin-right: 60px;
-}
-.one .border{
-	border: 1px #bce8f1 solid;
-	border-top: none;
-	background: #fff;
-}
-.one ul li  {
-	text-align: center;
-}
-.one ul li a {
-	display: block;
-	padding: 5px;
-	text-align: center;
-}
-.one  h2{
-	font-family: "宋体";
-	text-align: center;
-}
-.one p {
-	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-.one p.front  a{
-	background: url(images/button_large.png) center no-repeat;
-	padding: 20px;
-	padding-left: 91px;
-	padding-right: 91px;
-}
-.first p.front a {
-	background: url(images/split_button_left.png) center no-repeat;
-}
-.third p.front a {
-	background: url(images/split_button_right.png) center no-repeat;
-}
-.one p.front  a:hover {
-	background: url(images/button_small.png) center no-repeat;
-	padding: 20px;
-	padding-left: 91px;
-	padding-right: 91px;
-	font-weight: bolder;
-}
-.first p.front  a:hover {
-	background: url(images/split_button_right.png) center no-repeat;
-	padding: 20px;
-	padding-left: 91px;
-	padding-right: 91px;
-	font-weight: bolder;
-}
-.third p.front  a:hover {
-	background: url(images/split_button_left.png) center no-repeat;
-	padding: 20px;
-	padding-left: 91px;
-	padding-right: 91px;
-	font-weight: bolder;
-}
-.one p .behind a {
-	background: url(images/split_button_right.png) right bottom no-repeat;
-	padding: 20px;
-	padding-left: 40px;
-	padding-right: 49px;
-}
-.mid .hosting{
-	margin-top: 30px;
-	background: url(images/services_header.png) top no-repeat;
+.holder {
+	height: 100px;
+	background: url(images/blue_bg.png) repeat-x;
 }
 /*********************************************************************Foot**********************************************/
 #foot {
