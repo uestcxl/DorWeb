@@ -66,13 +66,22 @@ class FilesController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Files']))
+		/*if(isset($_POST['Files']))
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->files_id));*/
+		/*if(isset($_POST['Files']))
 		{
 			$model->attributes=$_POST['Files'];
+			$attach = CUploadedFile::getInstanceByName("Files_file_name");
+			var_dump($attach);die;
+			
 			if($model->save())
+			{
+				$this->moveFile();
 				$this->redirect(array('view','id'=>$model->files_id));
-		}
+			}
+		}*/
+
 
 		$this->render('create',array(
 			'model'=>$model,
