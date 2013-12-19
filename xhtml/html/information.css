@@ -122,6 +122,26 @@ body#download a#downloadLink {
 	height: 100px;
 	background: url(images/blue_bg.png) repeat-x;
 }
+/******************************************************************mainContent************************/
+.mainContent {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #bce8f1;
+}
+.mainContent h4 {
+	text-align: center;
+	margin: 10px;
+}
+.mainContent  p {
+	text-indent: 30px;
+}
+.info {
+	font-size: 14px;
+	color: #aaa;
+	text-align:  center;
+}
 /*********************************************************************Foot**********************************************/
 #foot {
 	background: url(images/dark_grey_bg.png) ;

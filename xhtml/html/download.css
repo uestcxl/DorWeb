@@ -122,6 +122,29 @@ body#download a#downloadLink {
 	height: 100px;
 	background: url(images/blue_bg.png) repeat-x;
 }
+/*******************************************************************BODY***********************************************/
+ul.content {
+	width: 900px;
+	margin: 0 auto;
+}
+ul.content li {
+	width: 100%;
+	border-bottom: 1px dashed grey;
+}
+.kemu {
+	float: left;
+	padding: 10px;
+	padding-left: 30px;
+	font-size: 17px;
+	color: #14556b;
+}
+.xiazai {
+	float:  right;
+	padding: 10px;
+	padding-right: 20px;
+	font-size: 17px;
+	color: #1abc6e;
+}
 /*********************************************************************Foot**********************************************/
 #foot {
 	background: url(images/dark_grey_bg.png) ;
