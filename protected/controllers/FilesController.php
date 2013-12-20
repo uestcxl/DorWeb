@@ -32,6 +32,10 @@ class FilesController extends Controller
 				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
+			array('allow',  // allow all users to perform 'index' and 'view' actions
+				'actions'=>array('download'),
+				'users'=>array('@'),
+			),			
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('create','update','admin','delete'),
 				'users'=>array(ADMIN),
@@ -209,15 +213,16 @@ class FilesController extends Controller
    	 	if (isset($_GET["id"])) 
    	 	{ 
         			$id = $_GET["id"]; 
-        			$model = DownFiles::model()->find('id =:id', array('id' => $id)); 
+        			$model = Files::model()->findByPk($id); 
          
         			if ($model == null) { 
            				throw new CHttpException ('500', '文件不存在'); 
         			} else { 
             				// 服务器端文件的路径 
-            				$fileName = $model->saveFilePath ; 
-            				if (file_exists($fileName))
-                				yii::app ()->request->sendFile ($model->fileName,  file_get_contents ($fileName));
+            				$fileName = $model->file_name ; 
+            				$file =  Yii::app()->basePath."/../Files/".$fileName;
+            				if (file_exists($file))
+                				yii::app ()->request->sendFile ($model->file_name,  file_get_contents ($file));
             			} 
         		} 
 	} 
