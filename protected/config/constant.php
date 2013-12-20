@@ -1,0 +1,2 @@
+<?php
+define('ADMIN', 'admin');
