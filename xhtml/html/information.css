@@ -124,11 +124,10 @@ body#download a#downloadLink {
 }
 /******************************************************************mainContent************************/
 .mainContent {
-	width: 1000px;
+	width: 1100px;
 	margin: 0 auto;
 	margin-top: 20px;
 	padding: 10px;
-	border: 1px solid #bce8f1;
 }
 .mainContent h4 {
 	text-align: center;
@@ -142,6 +141,26 @@ body#download a#downloadLink {
 	color: #aaa;
 	text-align:  center;
 }
+.leftpart {
+	float: left;
+	width: 780px;
+	border-left: 1px solid #bce8f1;
+	border-right: 1px solid #bce8f1;
+	color: black;
+}
+.rightpart {
+	float: right;
+	margin-top: 30px;
+	font-size: 15px;
+}
+.rightpart ul li a{
+	display: block;
+	padding: 5px;
+	border-bottom: 1px dashed #aaa;
+	color: #6b737a;
+}
+.rightpart ul li a:hover {
+	color: #d98734;}
 /*********************************************************************Foot**********************************************/
 #foot {
 	background: url(images/dark_grey_bg.png) ;
