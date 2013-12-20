@@ -21,31 +21,4 @@ class Controller extends CController
 	 */
 	public $breadcrumbs=array();
 
-
-	/**
-	 *  移动上传文件
-	 */
-	public function moveFile($fileName)
-	{
-			$dir = Yii::app()->basePath."/Files/".$fileName;
-			$this->file->saveAs($dir);
-			chmod($dir, 0776);
-	}
-
-	/**
-	 * 删除文件
-	 * $file 文件名
-	 * $dir 文件所在路径名
-	 */
-	public function delFile($file,$dir='')
-	{
-		if($dir == '')
-			$dir = Yii::app()->basePath."/../Files/".$file;
-		else 
-			$dir = $dir.$file;
-		
-		if(file_exists($dir)){
-			unlink($dir);
-		}
-	}
 }

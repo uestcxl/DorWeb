@@ -2,6 +2,7 @@
 
 class FilesController extends Controller
 {
+	public $file;   	//upload files
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -69,18 +70,16 @@ class FilesController extends Controller
 		/*if(isset($_POST['Files']))
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->files_id));*/
-		/*if(isset($_POST['Files']))
+		if(isset($_POST['Files']))
 		{
-			$model->attributes=$_POST['Files'];
-			$attach = CUploadedFile::getInstanceByName("Files_file_name");
-			var_dump($attach);die;
-			
+			$this->file = CUploadedFile::getInstanceByName('Files[file_name]');
+			$model->file_name=$this->file->name;
 			if($model->save())
 			{
 				$this->moveFile();
 				$this->redirect(array('view','id'=>$model->files_id));
 			}
-		}*/
+		}
 
 
 		$this->render('create',array(
@@ -119,7 +118,10 @@ class FilesController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+		$file=$this->loadModel($id);
+		$fileName=$file->file_name;
+		$file->delete();
+		$this->delFile($fileName);
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
@@ -177,6 +179,32 @@ class FilesController extends Controller
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
+		}
+	}
+
+	/**
+	 *  移动上传文件
+	 */
+	public function moveFile()
+	{
+		if(is_object($this->file) && get_class($this->file)==='CUploadedFile')
+		{
+			$dir = Yii::app()->basePath."/../Files/".$this->file->name;
+			$this->file->saveAs($dir);
+			chmod($dir, 0776);
+		}
+	}
+
+	/**
+	 * 删除文件
+	 * $file 文件名
+	 */
+	public function delFile($file)
+	{
+		$dir = Yii::app()->basePath."/../Files/".$file;	
+		if(file_exists($dir))
+		{
+			unlink($dir);
 		}
 	}
 }
