@@ -7,9 +7,11 @@
  * @property integer $id
  * @property string $user_name
  * @property string $password
+ * @property string $password2
  */
 class User extends CActiveRecord
 {
+	public $password2;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -26,11 +28,11 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_name, password', 'required'),
-			array('user_name, password', 'length', 'max'=>20),
+			array('user_name, password ,password2', 'required'),
+			array('user_name, password ,password2', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, user_name, password', 'safe', 'on'=>'search'),
+			array('id, user_name, password , password2', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,6 +56,7 @@ class User extends CActiveRecord
 			'id' => 'ID',
 			'user_name' => 'User Name',
 			'password' => 'Password',
+			'password2'=> 'Confirm',
 		);
 	}
 
@@ -93,5 +96,26 @@ class User extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	protected function afterValidate() {
+		parent::afterValidate();
+		$this->password = $this->encrypt($this->password);
+	}
+
+	public function beforesave(){
+		if($this->password!==$this->password2)
+			echo "<script type='text/javascript'>
+        				alert('请确认两次输入密码相同');
+        				window.location.href = '../user/create';
+    				 </script>";
+	}
+
+	/**
+	 *  保存密码前先加密
+	 */	
+	public function encrypt($value) {
+		$value = $value."DorWeb";
+		return md5($value);
 	}
 }

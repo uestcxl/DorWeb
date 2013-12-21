@@ -28,16 +28,16 @@ class UserController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','create','view'),
 				'users'=>array('*'),
 			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
-			),
+			array('allow',  // allow all users to perform 'index' and 'view' actions
+				'actions'=>array('PwChange'),
+				'users'=>array('*'),
+			),			
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array(ADMIN),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -69,9 +69,18 @@ class UserController extends Controller
 
 		if(isset($_POST['User']))
 		{
-			$model->attributes=$_POST['User'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			$user = User::model()->findByAttributes(array('user_name'=>$_POST['User']['user_name']));
+			if($user===NULL)
+			{
+				$model->attributes=$_POST['User'];
+				if($model->save())
+					$this->redirect(array('view','id'=>$model->id));
+			}else{
+				echo "<script type='text/javascript'>
+        				alert('用户名已被使用');
+        				window.location.href = '../user/create';
+    				 </script>";
+			}
 		}
 
 		$this->render('create',array(
@@ -87,7 +96,24 @@ class UserController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
 
+		if(isset($_POST['User']))
+		{
+			$model->attributes=$_POST['User'];
+			if($model->save())				
+				$this->redirect(array('view','id'=>$model->id));
+		}
+		$this->render('update',array(
+			'model'=>$model,
+		));
+	}
+
+	public function actionPwChange()
+	{
+		$model=$this->loadUserModel();
+		//var_dump($model);die;
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -95,14 +121,17 @@ class UserController extends Controller
 		{
 			$model->attributes=$_POST['User'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				echo "<script type='text/javascript'>
+        				alert('修改成功');
+        				window.location.href = '../site/index';
+    				 </script>";				
+				//$this->redirect(array('view','id'=>$model->id));
 		}
-
+		$model['password'] = '';
 		$this->render('update',array(
 			'model'=>$model,
 		));
 	}
-
 	/**
 	 * Deletes a particular model.
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
@@ -158,6 +187,13 @@ class UserController extends Controller
 		return $model;
 	}
 
+	public function loadUserModel()
+	{
+		$model=User::model()->findByAttributes(array('user_name'=>Yii::app()->user->name));
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
+	}
 	/**
 	 * Performs the AJAX validation.
 	 * @param User $model the model to be validated

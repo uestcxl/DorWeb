@@ -2,6 +2,7 @@
 
 class FilesController extends Controller
 {
+	public $file;   	//upload files
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -31,13 +32,13 @@ class FilesController extends Controller
 				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+			array('allow',  // allow all users to perform 'index' and 'view' actions
+				'actions'=>array('download'),
 				'users'=>array('@'),
-			),
+			),			
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'actions'=>array('create','update','admin','delete'),
+				'users'=>array(ADMIN),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -66,13 +67,20 @@ class FilesController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+		/*if(isset($_POST['Files']))
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->files_id));*/
 		if(isset($_POST['Files']))
 		{
-			$model->attributes=$_POST['Files'];
+			$this->file = CUploadedFile::getInstanceByName('Files[file_name]');
+			$model->file_name=$this->file->name;
 			if($model->save())
+			{
+				$this->moveFile();
 				$this->redirect(array('view','id'=>$model->files_id));
+			}
 		}
+
 
 		$this->render('create',array(
 			'model'=>$model,
@@ -110,7 +118,10 @@ class FilesController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+		$file=$this->loadModel($id);
+		$fileName=$file->file_name;
+		$file->delete();
+		$this->delFile($fileName);
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
@@ -170,4 +181,49 @@ class FilesController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	/**
+	 *  移动上传文件
+	 */
+	public function moveFile()
+	{
+		if(is_object($this->file) && get_class($this->file)==='CUploadedFile')
+		{
+			$dir = Yii::app()->basePath."/../Files/".$this->file->name;
+			$this->file->saveAs($dir);
+			chmod($dir, 0776);
+		}
+	}
+
+	/**
+	 * 删除文件
+	 * $file 文件名
+	 */
+	public function delFile($file)
+	{
+		$dir = Yii::app()->basePath."/../Files/".$file;	
+		if(file_exists($dir))
+		{
+			unlink($dir);
+		}
+	}
+
+	public function actionDownload()
+	{ 
+   	 	if (isset($_GET["id"])) 
+   	 	{ 
+        			$id = $_GET["id"]; 
+        			$model = Files::model()->findByPk($id); 
+         
+        			if ($model == null) { 
+           				throw new CHttpException ('500', '文件不存在'); 
+        			} else { 
+            				// 服务器端文件的路径 
+            				$fileName = $model->file_name ; 
+            				$file =  Yii::app()->basePath."/../Files/".$fileName;
+            				if (file_exists($file))
+                				yii::app ()->request->sendFile ($model->file_name,  file_get_contents ($file));
+            			} 
+        		} 
+	} 
 }

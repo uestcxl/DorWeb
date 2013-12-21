@@ -122,6 +122,45 @@ body#download a#downloadLink {
 	height: 100px;
 	background: url(images/blue_bg.png) repeat-x;
 }
+/******************************************************************mainContent************************/
+.mainContent {
+	width: 1100px;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 10px;
+}
+.mainContent h4 {
+	text-align: center;
+	margin: 10px;
+}
+.mainContent  p {
+	text-indent: 30px;
+}
+.info {
+	font-size: 14px;
+	color: #aaa;
+	text-align:  center;
+}
+.leftpart {
+	float: left;
+	width: 780px;
+	border-left: 1px solid #bce8f1;
+	border-right: 1px solid #bce8f1;
+	color: black;
+}
+.rightpart {
+	float: right;
+	margin-top: 30px;
+	font-size: 15px;
+}
+.rightpart ul li a{
+	display: block;
+	padding: 5px;
+	border-bottom: 1px dashed #aaa;
+	color: #6b737a;
+}
+.rightpart ul li a:hover {
+	color: #d98734;}
 /*********************************************************************Foot**********************************************/
 #foot {
 	background: url(images/dark_grey_bg.png) ;

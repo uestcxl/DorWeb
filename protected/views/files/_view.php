@@ -17,5 +17,6 @@
 	<?php echo CHtml::encode($data->time); ?>
 	<br />
 
+            <?php echo CHtml::link('下载', array('download', 'id'=>$data->files_id)); ?>   
 
 </div>

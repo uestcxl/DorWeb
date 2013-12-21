@@ -26,7 +26,7 @@ class Files extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('file_name, time', 'required'),
+			//array('file_name', 'required'),
 			array('file_name', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -93,5 +93,19 @@ class Files extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	/**
+	 * 提交时自动保存时间
+	 */
+	public function beforeSave()
+	{
+		if(parent::beforeSave())
+		{  
+ 		         $this->time = date('Y-m-d G:i:s'); 
+		         return true;  
+		}else{ 
+		        return false;  
+		} 
 	}
 }

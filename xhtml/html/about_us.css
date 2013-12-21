@@ -122,6 +122,11 @@ body#download a#downloadLink {
 	height: 100px;
 	background: url(images/blue_bg.png) repeat-x;
 }
+.us {
+	width: 1100px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
 /*********************************************************************Foot**********************************************/
 #foot {
 	background: url(images/dark_grey_bg.png) ;

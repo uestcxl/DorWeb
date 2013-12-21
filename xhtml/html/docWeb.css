@@ -115,6 +115,9 @@ body#feature a#featureLink {
 	color: #fff;
 	background: #1abc6e;
 }
+img.dushu {
+	margin-top: 20px;
+}
 /*********************************************************************mainContent***********************************/
 
 .mainContent {
@@ -142,11 +145,17 @@ body#feature a#featureLink {
 	width: 300px;
 	text-align: center;
 }*/
+.left-hosting {
+	width: 298px;
+	height: 110px;
+	background: url(images/hosting_header.png) top  no-repeat ;
+	margin-top: 190px;
+}
 .hosting {
 	width: 298px;
 	height: 110px;
 	background: url(images/hosting_header.png) top  no-repeat ;
-	margin-top: 90px;
+	margin-top: 100px;
 }
 .one {
 	width: 298px;
@@ -215,7 +224,7 @@ body#feature a#featureLink {
 	padding-right: 49px;
 }
 .mid .hosting{
-	margin-top: 30px;
+	margin-top: 50px;
 	background: url(images/services_header.png) top no-repeat;
 }
 /*********************************************************************Foot**********************************************/
