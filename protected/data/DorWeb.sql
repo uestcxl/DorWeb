@@ -1,8 +1,9 @@
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
-CREATE DATABASES DorWeb;
-USE DorWeb;
+
+CREATE SCHEMA IF NOT EXISTS `DorWeb` DEFAULT CHARACTER SET utf8 collate utf8_general_ci;
+USE `DorWeb` ;
 
 -- -----------------------------------------------------
 -- Table `DorWeb`.`user`
@@ -10,7 +11,7 @@ USE DorWeb;
 CREATE  TABLE IF NOT EXISTS `DorWeb`.`user` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `user_name` VARCHAR(20) NOT NULL ,
-  `password` VARCHAR(20) NOT NULL ,
+  `password` VARCHAR(64) NOT NULL ,
   PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
 
@@ -21,7 +22,7 @@ ENGINE = InnoDB;
 CREATE  TABLE IF NOT EXISTS `DorWeb`.`news` (
   `news_id` INT NOT NULL AUTO_INCREMENT ,
   `title` VARCHAR(50) NOT NULL ,
-  `content` TEXT NOT NULL ,
+  `content` TEXT CHARACTER SET 'utf8' NULL ,
   `time` DATETIME NOT NULL ,
   PRIMARY KEY (`news_id`) )
 ENGINE = InnoDB;
