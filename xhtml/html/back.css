@@ -19,7 +19,7 @@ body {
 	font-family: Helvetica, 'microsoft yahei', Arial, sans-serif;
 	color: #6b737a;
 }
-body#about_us a#about_usLink {
+body#back a#backLink {
 	background: #d8e5f1;
 }
 #mainContent {
@@ -122,10 +122,61 @@ body#download a#downloadLink {
 	height: 100px;
 	background: url(images/blue_bg.png) repeat-x;
 }
-.us {
-	width: 1100px;
+.manage {
+	width: 1000px;
 	margin: 0 auto;
-	padding-top: 20px;
+}
+.manage .bg a {
+	display: block;
+	color:#fff ;
+	font-size: 16px;
+	font-weight: bold;
+	text-shadow: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 20px;
+	background: url(images/go.png) left  no-repeat;
+}
+.manage .bg  a:hover {
+	color: #1abc6e;
+}
+.bg {
+	background: #b2f511;
+	width: 90px;
+}
+.manage ul li  a{
+	display: block;
+	margin: 5px;
+	margin-left: 0;
+	padding: 10px;
+	color: #5e4feb;
+	width: 110px;
+}
+.editor {
+	float: left;
+}
+.manage ul li {
+	width: 90px;
+	background: url(images/bg_story_high.png) left no-repeat;
+}
+body#back a#news {
+	width: 90px;
+	background: url(images/bg_story_high1.png);
+}
+body#back a#upload {
+	width: 90px;
+	background: url(images/bg_story_high1.png);
+}
+.manage ul li  a:hover {
+	width: 90px;
+	background: url(images/bg_story_high1.png);
+}
+.content {
+	height: 300px;
+	width: 750px;
+	margin-left: 110px;
+	border: 1px solid #bce8f1;
 }
 /*********************************************************************Foot**********************************************/
 #foot {
