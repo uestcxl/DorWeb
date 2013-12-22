@@ -147,6 +147,7 @@ body#download a#downloadLink {
 	border-left: 1px solid #bce8f1;
 	border-right: 1px solid #bce8f1;
 	color: black;
+	padding-left: 10px;
 }
 .rightpart {
 	float: right;

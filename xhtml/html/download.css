@@ -151,11 +151,12 @@ ul.content li {
 	float:  right;
 	padding: 10px;
 	padding-right: 20px;
-	font-size: 16px;
-	color: #95ad1a;
+	margin-top: -6px;
+	margin-bottom: -4px;
+	width: 50px;
 }
 .xiazai:hover {
-	color: #fed857;
+	width: 40px;
 }
 .even {
 	background: #f3f6f8;
