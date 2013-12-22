@@ -100,15 +100,15 @@ class User extends CActiveRecord
 
 	protected function afterValidate() {
 		parent::afterValidate();
-		$this->password = $this->encrypt($this->password);
+		if($this->password!==$this->password2)
+			echo "<script type='text/javascript'>
+        			alert('请确认两次输入密码相同');
+        			window.location.href = '../user/create';
+    		 	</script>";
 	}
 
 	public function beforesave(){
-		if($this->password!==$this->password2)
-			echo "<script type='text/javascript'>
-        				alert('请确认两次输入密码相同');
-        				window.location.href = '../user/create';
-    				 </script>";
+    	$this->password = $this->encrypt($this->password);
 	}
 
 	/**

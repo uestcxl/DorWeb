@@ -46,6 +46,12 @@ $this->menu=array(
         <?php echo $form->passwordField($model,'password',array('size'=>20,'maxlength'=>20)); ?>
         <?php echo $form->error($model,'password'); ?>
     </div>
+    
+    <div class="row">
+        <?php echo $form->labelEx($model,'password2'); ?>
+        <?php echo $form->passwordField($model,'password2',array('size'=>20,'maxlength'=>20)); ?>
+        <?php echo $form->error($model,'password2'); ?>
+    </div>
 
     <div class="row buttons">
         <?php echo CHtml::submitButton('Change'); ?>

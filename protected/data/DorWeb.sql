@@ -11,7 +11,7 @@ USE `DorWeb` ;
 CREATE  TABLE IF NOT EXISTS `DorWeb`.`user` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `user_name` VARCHAR(20) NOT NULL ,
-  `password` VARCHAR(64) NOT NULL ,
+  `password` VARCHAR(32) NOT NULL ,
   PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
 

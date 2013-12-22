@@ -63,7 +63,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=DorWeb',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'toor',
+			'password' => 'xulei123',
 			'charset' => 'utf8',
 		),		
 		
