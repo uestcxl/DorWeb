@@ -143,7 +143,8 @@ body#download a#downloadLink {
 }
 .bg {
 	background: #b2f511;
-	width: 90px;
+	width: 125px;
+	margin-left: 110px;
 }
 .manage ul li  a{
 	display: block;
@@ -173,10 +174,43 @@ body#back a#upload {
 	background: url(images/bg_story_high1.png);
 }
 .content {
-	height: 300px;
-	width: 750px;
 	margin-left: 110px;
 	border: 1px solid #bce8f1;
+	padding: 20px;
+}
+.content p {
+	padding: 5px;
+}
+.content .date {
+	margin-left: 40px;
+}
+.date {
+	float: right;
+	width: 120px;
+}
+.bianji {
+	font-size: 15px;
+	margin-left: 50px;
+	float: right;
+	width: 50px;
+}
+.shanchu a:hover {
+	border: 1px solid black;
+}
+.bianji a:hover {
+	border: 1px solid black;
+}
+.shanchu {
+	font-size: 15px;
+	margin-left: 50px;
+	float: right;
+	width: 50px;
+}
+.shangchuan {
+	margin-left: 50px;
+	font-size: 15px;
+	float: right;
+	width: 50px;
 }
 /*********************************************************************Foot**********************************************/
 #foot {
