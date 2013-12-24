@@ -2,16 +2,15 @@
 
 /**
  * This is the model class for table "user".
- *
+ * git commit
  * The followings are the available columns in table 'user':
  * @property integer $id
  * @property string $user_name
  * @property string $password
- * @property string $password2
  */
 class User extends CActiveRecord
 {
-	public $password2;
+	public $password_repeat;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -26,13 +25,15 @@ class User extends CActiveRecord
 	public function rules()
 	{
 		// NOTE: you should only define rules for those attributes that
-		// will receive user inputs.
 		return array(
-			array('user_name, password ,password2', 'required'),
-			array('user_name, password ,password2', 'length', 'max'=>20),
+			array('user_name, password ,password_repeat', 'required'),
+			array('user_name', 'length', 'max'=>20),
+			array('password', 'length', 'max'=>64),
+			array('password', 'compare'),
+			array('password_repeat', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, user_name, password , password2', 'safe', 'on'=>'search'),
+			array('id, user_name', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,10 +54,10 @@ class User extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'user_name' => 'User Name',
-			'password' => 'Password',
-			'password2'=> 'Confirm',
+			'id' => 'User',
+			'user_name' => '用户名',
+			'password' => '密码',
+			'password_repeat'=> '确认密码',
 		);
 	}
 
@@ -74,19 +75,33 @@ class User extends CActiveRecord
 	 */
 	public function search()
 	{
-		// @todo Please modify the following code to remove attributes that should not be searched.
-
 		$criteria=new CDbCriteria;
-
-		$criteria->compare('id',$this->id);
+ 		$criteria->addCondition("user_name != 'ADMIN'");   //管理用户时不显示admin用户，防止意外删除
+		$criteria->compare('id',$this->id,true);
 		$criteria->compare('user_name',$this->user_name,true);
 		$criteria->compare('password',$this->password,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+			'pagination'=>array('pageSize'=>20),
 		));
 	}
 
+	protected function afterValidate() {
+		parent::afterValidate();
+		if($this->password!==$this->password_repeat)
+			echo "<script type='text/javascript'>
+        			alert('请确认两次输入密码相同');
+        			window.location.href = '../user/create';
+    		 	</script>";		
+		$this->password = $this->encrypt($this->password);
+	}
+	
+	public function encrypt($value) {
+		$value = $value."dreamfly";
+		return md5($value);
+	}
+	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
@@ -96,26 +111,5 @@ class User extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
-	}
-
-	protected function afterValidate() {
-		parent::afterValidate();
-		if($this->password!==$this->password2)
-			echo "<script type='text/javascript'>
-        			alert('请确认两次输入密码相同');
-        			window.location.href = '../user/create';
-    		 	</script>";
-	}
-
-	public function beforesave(){
-    	$this->password = $this->encrypt($this->password);
-	}
-
-	/**
-	 *  保存密码前先加密
-	 */	
-	public function encrypt($value) {
-		$value = $value."DorWeb";
-		return md5($value);
 	}
 }

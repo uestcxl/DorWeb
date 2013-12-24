@@ -28,7 +28,6 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$this->layout='//layouts/column1';
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
@@ -98,7 +97,7 @@ class SiteController extends Controller
 				$this->redirect(Yii::app()->user->returnUrl);
 		}
 		// display the login form
-		$this->render('login',array('model'=>$model));
+		$this->renderPartial('login',array('model'=>$model));
 	}
 
 	/**

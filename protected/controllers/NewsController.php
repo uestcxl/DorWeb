@@ -2,6 +2,7 @@
 
 class NewsController extends Controller
 {
+	public $button=0;
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -45,10 +46,14 @@ class NewsController extends Controller
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
-	public function actionView($id)
+	public function actionView($id=0)
 	{
+		if($id==0)
+			$model=News::model()->lastNews();
+		else
+			$model=$this->loadModel($id);
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model'=>$model,
 		));
 	}
 
@@ -58,6 +63,7 @@ class NewsController extends Controller
 	 */
 	public function actionCreate()
 	{
+		$this->layout='//layouts/column1';
 		$model=new News;
 
 		// Uncomment the following line if AJAX validation is needed
@@ -72,30 +78,6 @@ class NewsController extends Controller
 		}
 
 		$this->render('create',array(
-			'model'=>$model,
-		));
-	}
-
-	/**
-	 * Updates a particular model.
-	 * If update is successful, the browser will be redirected to the 'view' page.
-	 * @param integer $id the ID of the model to be updated
-	 */
-	public function actionUpdate($id)
-	{
-		$model=$this->loadModel($id);
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['News']))
-		{
-			$model->attributes=$_POST['News'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->news_id));
-		}
-
-		$this->render('update',array(
 			'model'=>$model,
 		));
 	}
@@ -130,13 +112,11 @@ class NewsController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new News('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['News']))
-			$model->attributes=$_GET['News'];
-
+		$this->layout='//layouts/column1';
+		$model=News::model()->findAll();
 		$this->render('admin',array(
 			'model'=>$model,
+			//<list>'button'=>$button,
 		));
 	}
 

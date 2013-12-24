@@ -62,15 +62,16 @@ class UserController extends Controller
 			if($user===NULL)
 			{
 				$model->attributes=$_POST['User'];
-				//$model->user_name=$_POST['User']['user_name'];
-				//$model->password=$_POST['User']['password'];
 				if($model->save())
-					$this->redirect(array('view','id'=>$model->id));
+					echo "<script type='text/javascript'>
+        							alert('注册成功!\n确定并返回登陆页面。');
+        							window.location.href = '../site/login';
+    				 		</script>";
 			}else{
 				echo "<script type='text/javascript'>
-        				alert('用户名已被使用');
-        				window.location.href = '../user/create';
-    				 </script>";
+        						alert('用户名已被使用!');
+        						window.location.href = '../user/create';
+    				 	</script>";
 			}
 		}
 
@@ -91,9 +92,9 @@ class UserController extends Controller
 			$model->attributes=$_POST['User'];
 			if($model->save())
 				echo "<script type='text/javascript'>
-        				alert('修改成功');
-        				window.location.href = '../site/index';
-    				 </script>";				
+        						alert('修改成功!');
+        						window.location.href = '../site/index';
+    				 	</script>";				
 				//$this->redirect(array('view','id'=>$model->id));
 		}
 		$model['password'] = '';

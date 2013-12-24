@@ -1,6 +1,6 @@
 <?php /* @var $this Controller */ ?>
-<?php $this->beginContent('//layouts/default'); ?>
-<div id="content">
-	<?php echo $content; ?>
-</div><!-- content -->
+<?php $this->beginContent('//layouts/back'); ?>
+                <div id="content">
+                        <?php echo $content; ?>
+                </div>
 <?php $this->endContent(); ?>

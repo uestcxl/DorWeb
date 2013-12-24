@@ -2,6 +2,7 @@
 
 class FilesController extends Controller
 {
+	public $button=1;
 	public $file;   	//upload files
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -63,6 +64,7 @@ class FilesController extends Controller
 	 */
 	public function actionCreate()
 	{
+		$this->layout = '//layouts/column1';
 		$model=new Files;
 
 		// Uncomment the following line if AJAX validation is needed
@@ -77,36 +79,12 @@ class FilesController extends Controller
 			if($model->save())
 			{
 				$this->moveFile();
-				$this->redirect(array('view','id'=>$model->files_id));
+				$this->redirect(array('admin'));
 			}
 		}
 
 
 		$this->render('create',array(
-			'model'=>$model,
-		));
-	}
-
-	/**
-	 * Updates a particular model.
-	 * If update is successful, the browser will be redirected to the 'view' page.
-	 * @param integer $id the ID of the model to be updated
-	 */
-	public function actionUpdate($id)
-	{
-		$model=$this->loadModel($id);
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Files']))
-		{
-			$model->attributes=$_POST['Files'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->files_id));
-		}
-
-		$this->render('update',array(
 			'model'=>$model,
 		));
 	}
@@ -133,9 +111,12 @@ class FilesController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Files');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+		$criteria = new CDbCriteria;
+		$criteria->order = 'time desc';
+		$model = Files::model()->findAll($criteria);
+
+		$this->renderPartial('index',array(
+			'model'=>$model,
 		));
 	}
 
@@ -144,10 +125,12 @@ class FilesController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Files('search');
+		$this->layout = '//layouts/column1';
+		/*$model=new Files('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Files']))
-			$model->attributes=$_GET['Files'];
+			$model->attributes=$_GET['Files'];*/
+		$model=Files::model()->findAll();
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -208,11 +191,9 @@ class FilesController extends Controller
 		}
 	}
 
-	public function actionDownload()
+	public function actionDownload($id)
 	{ 
-   	 	if (isset($_GET["id"])) 
-   	 	{ 
-        			$id = $_GET["id"]; 
+   
         			$model = Files::model()->findByPk($id); 
          
         			if ($model == null) { 
@@ -224,6 +205,6 @@ class FilesController extends Controller
             				if (file_exists($file))
                 				yii::app ()->request->sendFile ($model->file_name,  file_get_contents ($file));
             			} 
-        		} 
+        		
 	} 
 }

@@ -1,3 +1,8 @@
+<head>
+        <title>DocWeb</title>
+        <link href="<? echo Yii::app()->baseURL; ?>/xhtml/html/docWeb.css" rel="stylesheet" type="text/css" />
+</head>
+
 <div class="shape">
     <div id="mainContent" class="clearfix">
         <!--
@@ -61,4 +66,4 @@
 </div>
 </div>
 </div>
-</div>
+

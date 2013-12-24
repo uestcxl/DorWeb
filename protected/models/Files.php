@@ -52,7 +52,7 @@ class Files extends CActiveRecord
 	{
 		return array(
 			'files_id' => 'Files',
-			'file_name' => 'File Name',
+			'file_name' => '上传文件 : ',
 			'time' => 'Time',
 		);
 	}

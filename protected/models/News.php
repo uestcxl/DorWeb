@@ -53,8 +53,8 @@ class News extends CActiveRecord
 	{
 		return array(
 			'news_id' => 'News',
-			'title' => 'Title',
-			'content' => 'Content',
+			'title' => '标题',
+			'content' => '内容',
 			'time' => 'Time',
 		);
 	}
@@ -110,5 +110,14 @@ class News extends CActiveRecord
 		}else{ 
 		        return false;  
 		} 
+	}
+
+	public function lastNews(){
+		$criteria = new CDbCriteria;  
+		$criteria->order = 'news_id desc';
+		$criteria->limit = 1;
+		$news = News::model()->find($criteria);
+		if($news)
+			return $news;
 	}
 }

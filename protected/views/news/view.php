@@ -1,3 +1,8 @@
+<head>
+	<title>新闻</title>
+	<link href="<? echo Yii::app()->baseURL; ?>/xhtml/html/information.css" rel="stylesheet" type="text/css" />
+</head>
+
 <?php
 /* @var $this NewsController */
 /* @var $model News */

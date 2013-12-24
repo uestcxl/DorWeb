@@ -32,9 +32,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'password2'); ?>
-		<?php echo $form->passwordField($model,'password2',array('size'=>20,'maxlength'=>20)); ?>
-		<?php echo $form->error($model,'password2'); ?>
+		<?php echo $form->labelEx($model,'password_repeat'); ?>
+		<?php echo $form->passwordField($model,'password_repeat',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->error($model,'password_repeat'); ?>
 	</div>
 
 	<div class="row buttons">

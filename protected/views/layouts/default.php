@@ -32,7 +32,7 @@
                 array('label'=>'Home', 'url'=>array('/site/index')),
                 array('label'=>'News', 'url'=>array('/news/index', 'view'=>'about')),
                 array('label'=>'Files', 'url'=>array('/files/index')),
-                array('label'=>'User', 'url'=>array('/User/<list>')),
+                array('label'=>'User', 'url'=>array('/User/create')),
                 array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                 array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'修改密码', 'url'=>array('/User/PwChange')),
