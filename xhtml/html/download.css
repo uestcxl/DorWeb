@@ -146,6 +146,8 @@ ul.content li {
 	float: right;
 	padding: 10px;
 	font-size: 15px;
+	width: 90px;
+	text-align: center;
 }
 .xiazai {
 	float:  right;
@@ -154,6 +156,7 @@ ul.content li {
 	margin-top: -6px;
 	margin-bottom: -4px;
 	width: 50px;
+	text-align: center;
 }
 .xiazai:hover {
 	width: 40px;
