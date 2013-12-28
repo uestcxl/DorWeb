@@ -65,7 +65,7 @@ class UserController extends Controller
 				{
 					echo "<script type='text/javascript'>
         						alert('注册成功! 确定并返回登陆页面。');
-        						window.location.href = '../user/login';
+        						window.location.href = '../site/login';
     				 	</script>";    				 	
     				 }
 			}else{
