@@ -9,7 +9,7 @@
 <center>
     <form name="login" method="post" action="../user/create" >
         <table width="545" border="0" align="center" cellpadding="0" cellspacing="0">
-            <tbody><tr><td colspan="3"><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_1.gif" width="545" height="94" alt=""></td>
+            <tbody><tr><td colspan="3"><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_1-register.gif" width="545" height="94" alt=""></td>
                 <td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/spacer.gif" width="1" height="94" alt=""></td></tr>
                 <tr><td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_2.gif" width="91" height="14" alt=""></td>
                     <td rowspan="2" bgcolor="#FFFFFF">
