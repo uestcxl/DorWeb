@@ -3,6 +3,8 @@
 /* @var $model News */
 /* @var $form CActiveForm */
 ?>
+<script type="text/javascript" src="<?php echo Yii::app()->baseUrl.'/ueditor/ueditor.config.js'; ?>"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->baseUrl.'/ueditor/ueditor.all.js'; ?>"></script>
 
 <div class="form">
 
@@ -26,7 +28,11 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'content'); ?>
-		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'content',array('id'=>'myEditor')); ?>
+			<script type="text/javascript">
+		    		var editor = new UE.ui.Editor({initialFrameHeight:500});
+		    		editor.render("myEditor");
+			</script>
 		<?php echo $form->error($model,'content'); ?>
 	</div>
 <br>

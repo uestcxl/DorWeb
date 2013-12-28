@@ -1,53 +1,41 @@
-	<?php
-/* @var $this SiteController */
-/* @var $model LoginForm */
-/* @var $form CActiveForm  */
 
-$this->pageTitle=Yii::app()->name . ' - Login';
-$this->breadcrumbs=array(
-	'Login',
-);
-?>
-
-<h1>Login</h1>
-
-<p>Please fill out the following form with your login credentials:</p>
-
-<div class="form">
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'login-form',
-	'enableClientValidation'=>true,
-	'clientOptions'=>array(
-		'validateOnSubmit'=>true,
-	),
-)); ?>
-
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textField($model,'username'); ?>
-		<?php echo $form->error($model,'username'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password'); ?>
-		<?php echo $form->error($model,'password'); ?>
-		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
-		</p>
-	</div>
-
-	<div class="row rememberMe">
-		<?php echo $form->checkBox($model,'rememberMe'); ?>
-		<?php echo $form->label($model,'rememberMe'); ?>
-		<?php echo $form->error($model,'rememberMe'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Login'); ?>
-	</div>
-
-<?php $this->endWidget(); ?>
-</div><!-- form -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=Utf-8">
+	<title>Login</title>
+	<style type="text/css"></style>
+	<link rel="stylesheet" type="text/css" href="<? echo Yii::app()->baseURL; ?>/xhtml/html/login.css">
+	</head>
+<body>
+	<br><br><br><br><br>
+	<form name="login" method="post" action="login">
+		<table width="545" border="0" align="center" cellpadding="0" cellspacing="0">
+			<tbody><tr><td colspan="3"><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_1.gif" width="545" height="94" alt=""></td>
+				<td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/spacer.gif" width="1" height="94" alt=""></td></tr>
+				<tr><td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_2.gif" width="91" height="14" alt=""></td>
+					<td rowspan="2" bgcolor="#FFFFFF">
+						<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0" style="font-size:12px ">
+							<tbody>
+								<tr><td width="41%" height="15">&nbsp;UserName：</td><td width="59%"><input name="LoginForm[username]" type="text" size="20"></td></tr>
+								<tr><td height="15">&nbsp;Password：</td><td><input name="LoginForm[password]" type="password" size="20"></td></tr>
+								<tr>
+		<td><input id="ytLoginForm_rememberMe" type="hidden" value="0" name="LoginForm[rememberMe]"></td>
+  		<td><input name="LoginForm[rememberMe]" id="LoginForm_rememberMe" value="1" type="checkbox"/><label for="LoginForm_rememberMe">记住密码</label></td>	
+								</tr>
+								<tr>
+									<td height="20" colspan="2" align="center">
+									<input name="login" type="submit" class="login" value="Login" ></td></tr></tbody></table></td>
+									<td>
+										<img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_4.gif" width="146" height="14" alt=""></td>
+									<td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/spacer.gif" width="1" height="14" alt=""></td>
+								</tr>
+								<tr>
+									<td rowspan="2"><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_5.gif" width="91" height="209" alt=""></td>
+									<td rowspan="2"><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_6.gif" width="146" height="209" alt=""></td>
+									<td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/spacer.gif" width="1" height="147" alt=""></td></tr>
+									<tr><td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_7.gif" width="308" height="62" alt=""></td>
+										<td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/spacer.gif" width="1" height="62" alt=""></td></tr>
+										<input type="hidden" name="timeout" size="10" value="20" put="0"></tbody></table>
+			</form>
+	</body>
+</html>

@@ -3,5 +3,6 @@
         <link href="<? echo Yii::app()->baseURL; ?>/xhtml/html/back.css" rel="stylesheet" type="text/css" />
  </head>  
         <?php foreach($model as $file){ ?>
-            <p><?php echo $file->file_name; ?><span class="shanchu"><a href="<?php echo $this->createUrl('files/delete',array('id'=>$file->files_id)); ?>"><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/shanchu.jpg" width="20" height="20" /></a></span><span class="date"><?php echo $file->time; ?></span></p>
+            <p>【文件】<?php echo $file->file_name; ?><span class="shanchu"><a href="<?php echo $this->createUrl('files/delFile',array('id'=>$file->files_id)); ?>"><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/shanchu.jpg" width="20" height="20" /></a></span><span class="date"><?php echo $file->time; ?></span></p>
         <?php }?>
+

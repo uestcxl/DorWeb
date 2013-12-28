@@ -32,6 +32,7 @@
 </div>
 <div class="holder"></div>
 <ul class="content">
+    <b><li class="clearfix even"><span class=" front"><span class="kemu">文 件 </span><span class="date">上传时间</span></span><span class="date">下载</span></li></b>
     <?php 
         $i=0;
         foreach($model as $file){ ?>

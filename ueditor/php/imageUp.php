@@ -9,7 +9,7 @@
      */
     header("Content-Type: text/html; charset=utf-8");
     error_reporting(E_ERROR | E_WARNING);
-    date_default_timezone_set("Asia/shanghai");
+    date_default_timezone_set("Asia/chongqing");
     include "Uploader.class.php";
     //上传图片框中的描述表单名称，
     $title = htmlspecialchars($_POST['pictitle'], ENT_QUOTES);
@@ -17,8 +17,8 @@
 
     //上传配置
     $config = array(
-        "savePath" => ($path == "1" ? "../uploads/" : "../uploads/"),
-        "maxSize" => 3000, //单位KB
+        "savePath" => ($path == "1" ? "upload/" : "upload1/"),
+        "maxSize" => 1000, //单位KB
         "allowFiles" => array(".gif", ".png", ".jpg", ".jpeg", ".bmp")
     );
 

@@ -3,7 +3,7 @@
 <META http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <head>
     </head>
-    <body id="feature">
+    <body id="information">
         <div class="placeholder"></div>
     <div id="head">
         <div class="header clearfix">
@@ -28,9 +28,9 @@
         </ul>
     </div>
 </div>
-<div class="hey">
+
                         <?php echo $content; ?>
-</div>
+
 <div id="foot">
     <p class="lianjie">友情链接: <a href="http://www.uestc.edu.cn/">电子科大</a> <a href="http://bbs.stuhome.net/">清水河畔</a></p>
     <p class="copyright">Copyright 201工作室</p>
