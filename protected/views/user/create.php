@@ -7,7 +7,7 @@
     </head>
 <div class="holder"></div>
 <center>
-    <form name="login" method="post" action="../user/create">
+    <form name="login" method="post" action="../user/create" >
         <table width="545" border="0" align="center" cellpadding="0" cellspacing="0">
             <tbody><tr><td colspan="3"><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_1.gif" width="545" height="94" alt=""></td>
                 <td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/spacer.gif" width="1" height="94" alt=""></td></tr>
