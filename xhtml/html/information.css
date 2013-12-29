@@ -1,7 +1,7 @@
-/* * {
+* {
 	margin: 0;
 	padding: 0;
-} */
+}
 a {
 	text-decoration: none;
 	color: #002d38;
@@ -18,11 +18,9 @@ img {
 body {
 	font-family: Helvetica, 'microsoft yahei', Arial, sans-serif;
 	color: #6b737a;
-	margin: 0;
 }
 body#information a#informationLink {
 	background: #d8e5f1;
-	margin: 0;
 }
 #mainContent {
 	margin: 0 auto;
@@ -35,15 +33,12 @@ body#information a#informationLink {
 	font-size: 0;
 	clear: both;
 	visibility: hidden;
-	margin: 0;
 }
 .clearfix {
 	min-height: 1px;
-	margin: 0;
 }
 * html .clearfix {
 	height: 1px;
-	margin: 0;
 }
 .placeholder {
 	height: 30px;
@@ -60,7 +55,6 @@ body#information a#informationLink {
 .header img {
 	float: left;
 	margin-right: 30px;
-	margin: 0;
 }
 .hey {
 	width: 100%;
@@ -79,7 +73,6 @@ body#information a#informationLink {
 #head ul.left li img {
 	margin-bottom: -15px;
 	margin-left: 80px;
-	margin: 0;
 }
 #head ul li {
 	float: left;

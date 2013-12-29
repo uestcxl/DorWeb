@@ -1,13 +1,16 @@
-login{
+.login{
 	cursor: hand;
 	width: 140px;
 	height: 20px;
 	/*background: url('image/login1.gif');*/
+	border: 0;
+	margin: 0;
 }
 input{
 	cursor: hand;
 	border: solid 1px #666;
 	font-size: 12px;
+	margin: 3px;
 }
 p,form{
 	margin: 0px;
