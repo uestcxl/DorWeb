@@ -43,6 +43,8 @@ body#back a#backLink {
 .placeholder {
 	height: 30px;
 	background: url(images/blue_bg.png) repeat-x;
+	width: 100%;
+	min-width: 1120px;
 }
 #head {
 	width: 100%;
@@ -121,6 +123,8 @@ body#download a#downloadLink {
 .holder {
 	height: 100px;
 	background: url(images/blue_bg.png) repeat-x;
+	width: 100%;
+	min-width: 1120px;
 }
 .manage {
 	width: 1000px;
@@ -215,8 +219,11 @@ body#back a#upload {
 /*********************************************************************Foot**********************************************/
 #foot {
 	background: url(images/dark_grey_bg.png) ;
-	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	margin-top: 50px;
+	width: 100%;
+	min-width: 1120px;
 }
 .lianjie {
 	text-align: center;

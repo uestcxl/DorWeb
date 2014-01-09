@@ -1,34 +1,31 @@
 <head>
-	<title>新闻</title>
+	<title>新闻 - <?php echo $model->title; ?></title>
 	<link href="<? echo Yii::app()->baseURL; ?>/xhtml/html/information.css" rel="stylesheet" type="text/css" />
 </head>
-
-<?php
-/* @var $this NewsController */
-/* @var $model News */
-
-$this->breadcrumbs=array(
-	'News'=>array('index'),
-	$model->title,
-);
-
-$this->menu=array(
-	array('label'=>'List News', 'url'=>array('index')),
-	array('label'=>'Create News', 'url'=>array('create')),
-	array('label'=>'Update News', 'url'=>array('update', 'id'=>$model->news_id)),
-	array('label'=>'Delete News', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->news_id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage News', 'url'=>array('admin')),
-);
-?>
-
-<h1>View News #<?php echo $model->news_id; ?></h1>
-
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'news_id',
-		'title',
-		'content',
-		'time',
-	),
-)); ?>
+<div class="holder"></div>
+<!--****************************************************************************mainContent-********************************************************************************-->
+<div class="mainContent clearfix">
+<div class="leftpart">
+<h4><?php echo $model->title; ?></h4>
+<p class="info">发布时间 : <?php echo $model->time; ?></p>
+	<?php echo $model->content; ?>
+ </div>
+<div class="rightpart">
+	<ul>　
+		<?php 
+			$i = 0;
+			$newsList = $this->listNews();
+			foreach($newsList as $news){
+		?>
+			<li><a href="<?php echo $this->createUrl('news/view',array('id'=>$news->news_id)); ?>">【新闻】<?php echo $news->title; ?></a></li>
+		<?php 
+				$i++; 
+			}
+			if($i>=6){
+		?>
+			<li><a href="<?php echo $this->createUrl('news/index',array('id'=>$news->news_id)); ?>"><i>更多</i></a></li>
+		<?php	}?>
+		
+	</ul>
+</div>
+</div>

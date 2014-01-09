@@ -52,7 +52,6 @@ class UserController extends Controller
 	public function actionCreate()
 	{
 		$model=new User;
-
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -63,10 +62,12 @@ class UserController extends Controller
 			{
 				$model->attributes=$_POST['User'];
 				if($model->save())
+				{
 					echo "<script type='text/javascript'>
-        							alert('注册成功!\n确定并返回登陆页面。');
-        							window.location.href = '../site/login';
-    				 		</script>";
+        						alert('注册成功! 确定并返回登陆页面。');
+        						window.location.href = '../site/login';
+    				 	</script>";    				 	
+    				 }
 			}else{
 				echo "<script type='text/javascript'>
         						alert('用户名已被使用!');

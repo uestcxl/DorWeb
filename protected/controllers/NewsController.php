@@ -33,7 +33,7 @@ class NewsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('create','update','admin','delete'),
+				'actions'=>array('create','update','admin','delete','delNews'),
 				'users'=>array(ADMIN),
 			),
 			array('deny',  // deny all users
@@ -83,6 +83,31 @@ class NewsController extends Controller
 	}
 
 	/**
+	 * Updates a particular model.
+	 * If update is successful, the browser will be redirected to the 'view' page.
+	 * @param integer $id the ID of the model to be updated
+	 */
+	public function actionUpdate($id)
+	{
+		$this->layout='//layouts/column1';
+		$model=$this->loadModel($id);
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['News']))
+		{
+			$model->attributes=$_POST['News'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id));
+		}
+
+		$this->render('update',array(
+			'model'=>$model,
+		));
+	}
+
+	/**
 	 * Deletes a particular model.
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
 	 * @param integer $id the ID of the model to be deleted
@@ -96,14 +121,26 @@ class NewsController extends Controller
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
+	public function actionDelNews($id)
+	{
+		$this->loadModel($id)->delete();
+
+		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+		if(!isset($_GET['ajax']))
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+	}	
+
 	/**
 	 * Lists all models.
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('News');
+		$criteria = new CDbCriteria;
+		$criteria->order = 'time desc';		
+		$model=News::model()->findAll($criteria);
+		
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+			'model'=>$model,
 		));
 	}
 
@@ -113,7 +150,9 @@ class NewsController extends Controller
 	public function actionAdmin()
 	{
 		$this->layout='//layouts/column1';
-		$model=News::model()->findAll();
+		$criteria = new CDbCriteria;
+		$criteria->order = 'time desc';		
+		$model=News::model()->findAll($criteria);
 		$this->render('admin',array(
 			'model'=>$model,
 			//<list>'button'=>$button,
@@ -146,5 +185,17 @@ class NewsController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+
+	/**
+	 * 列出6条最新新闻
+	 */ 
+	public function listNews()
+	{
+		$criteria = new CDbCriteria;
+		$criteria->order = 'time desc';
+		$criteria->limit = 6;		
+		$model=News::model()->findAll($criteria);		
+		return $model;
 	}
 }

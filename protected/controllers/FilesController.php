@@ -38,7 +38,7 @@ class FilesController extends Controller
 				'users'=>array('@'),
 			),			
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('create','update','admin','delete'),
+				'actions'=>array('create','admin','delete','delFile'),
 				'users'=>array(ADMIN),
 			),
 			array('deny',  // deny all users
@@ -76,13 +76,13 @@ class FilesController extends Controller
 		{
 			$this->file = CUploadedFile::getInstanceByName('Files[file_name]');
 			$model->file_name=$this->file->name;
-			if($model->save())
+			if($this->moveFile()&$model->save())
 			{
-				$this->moveFile();
 				$this->redirect(array('admin'));
+			}else{
+				echo '未上传成功。';
 			}
 		}
-
 
 		$this->render('create',array(
 			'model'=>$model,
@@ -96,14 +96,37 @@ class FilesController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+		echo 'aaaa';die;
 		$file=$this->loadModel($id);
-		$fileName=$file->file_name;
-		$file->delete();
-		$this->delFile($fileName);
-
+		if($file!=NULL)
+		{
+			$fileName=$file->file_name;
+			$file->delete();
+			$this->delFile($fileName);
+		}else{
+			echo '没有此文件! ';
+		}
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+	}
+
+	public function actionDelFile($id)
+	{
+		$file=$this->loadModel($id);
+		if($file!=NULL)
+		{			
+			$fileName=$file->file_name;
+			$file->delete();
+			$this->delFile($fileName);
+			$this->redirect(array('admin'));
+		}else{
+			echo "<script type='text/javascript'>
+        				alert('没有此文件! ');
+        				window.location.href = 'admin';
+    				 </script>";			
+		}
+
 	}
 
 	/**
@@ -130,7 +153,9 @@ class FilesController extends Controller
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Files']))
 			$model->attributes=$_GET['Files'];*/
-		$model=Files::model()->findAll();
+		$criteria = new CDbCriteria;
+		$criteria->order = 'time desc';
+		$model = Files::model()->findAll($criteria);
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -175,7 +200,9 @@ class FilesController extends Controller
 			$dir = Yii::app()->basePath."/../Files/".$this->file->name;
 			$this->file->saveAs($dir);
 			chmod($dir, 0776);
+			return 1;
 		}
+		return 0;
 	}
 
 	/**
