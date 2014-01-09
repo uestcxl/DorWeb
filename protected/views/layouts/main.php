@@ -14,7 +14,7 @@
             <li><a href="<?php echo $this->createUrl('files/index',array()); ?>" id="downloadLink">资料下载</a></li>
             <li><a href="<?php echo $this->createUrl('site/contact',array()); ?>" id="about_usLink">关于我们</a></li>
             <?php if(Yii::app()->user->name===ADMIN){ ?>
-                <li><a href="<?php echo $this->createUrl('files/admin',array()); ?>" id="backLink">后台管理</a></li>
+                <li><a href="<?php echo $this->createUrl('news/admin',array()); ?>" id="backLink">后台管理</a></li>
             <?php }?>
         </ul>
         <ul class="right clearfix">

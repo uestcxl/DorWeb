@@ -36,7 +36,7 @@
     <?php 
         $i=0;
         foreach($model as $file){ ?>
-        <li class="clearfix <?php if($i%2) echo 'even'; else echo 'odd'; ?>"><span class=" front"><span class="kemu"><?php echo $file->file_name; ?></span><span class="date"><?php echo $file->time; ?></span></span><a href="<?php echo $this->createUrl('files/download',array('id'=>$file->files_id)); ?>"><span class="xiazai"><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/down.png" height="30" title="下载" /></span></a></li>
+        <li class="clearfix <?php if($i%2) echo 'even'; else echo 'odd'; ?>"><span class=" front"><span class="kemu"><?php echo MyFunction::cutStr($file->file_name,60); ?></span><span class="date"><?php echo $file->time; ?></span></span><a href="<?php echo $this->createUrl('files/download',array('id'=>$file->files_id)); ?>"><span class="xiazai"><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/down.png" height="30" title="下载" /></span></a></li>
     <?php $i++; }?>
 </ul>
 <div id="foot">

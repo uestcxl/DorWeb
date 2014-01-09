@@ -595,3 +595,26 @@ Stack trace:
 REQUEST_URI=/DorWeb/index.php/user/login
 HTTP_REFERER=http://localhost/DorWeb/index.php/user/create
 ---
+2014/01/09 13:12:53 [error] [php] Undefined variable: lenth (/var/www/DorWeb/protected/components/MyFunction.php:5)
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CBaseController.php(95): NewsController->renderInternal()
+#1 /var/www/DorWeb/framework/web/CController.php(869): NewsController->renderFile()
+#2 /var/www/DorWeb/framework/web/CController.php(782): NewsController->renderPartial()
+#3 /var/www/DorWeb/protected/controllers/NewsController.php(159): NewsController->render()
+#4 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): NewsController->actionAdmin()
+#5 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): NewsController->runAction()
+#7 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/DorWeb/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): NewsController->filterAccessControl()
+#10 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/DorWeb/framework/web/CController.php(265): NewsController->runActionWithFilters()
+#13 /var/www/DorWeb/framework/web/CWebApplication.php(282): NewsController->run()
+#14 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/DorWeb/index.php(15): CWebApplication->run()
+REQUEST_URI=/DorWeb/index.php/news/admin
+in /var/www/DorWeb/protected/components/MyFunction.php (5)
+in /var/www/DorWeb/protected/views/news/admin.php (6)
+in /var/www/DorWeb/protected/controllers/NewsController.php (159)

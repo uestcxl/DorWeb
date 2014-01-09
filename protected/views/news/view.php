@@ -17,13 +17,13 @@
 			$newsList = $this->listNews();
 			foreach($newsList as $news){
 		?>
-			<li><a href="<?php echo $this->createUrl('news/view',array('id'=>$news->news_id)); ?>">【新闻】<?php echo $news->title; ?></a></li>
+			<li><a href="<?php echo $this->createUrl('news/view',array('id'=>$news->news_id)); ?>">【新闻】<?php echo MyFunction::cutStr($news->title,30); ?></a></li>
 		<?php 
 				$i++; 
 			}
 			if($i>=6){
 		?>
-			<li><a href="<?php echo $this->createUrl('news/index',array('id'=>$news->news_id)); ?>"><i>更多</i></a></li>
+			<li><a href="<?php echo $this->createUrl('news/index',array('id'=>$news->news_id)); ?>" color='blue'><i>更多</i></a></li>
 		<?php	}?>
 		
 	</ul>
