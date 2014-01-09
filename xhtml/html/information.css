@@ -170,6 +170,7 @@ body#download a#downloadLink {
 	text-align:  center;
 }
 .leftpart {
+	min-height: 290px;
 	float: left;
 	width: 780px;
 	border-left: 1px solid #bce8f1;
@@ -179,7 +180,7 @@ body#download a#downloadLink {
 }
 .rightpart {
 	float: right;
-	margin-top: 30px;
+	margin-top: 10px;
 	font-size: 15px;
 }
 .rightpart ul li a{

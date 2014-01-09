@@ -18,7 +18,7 @@
 			$newsList = $this->listNews();
 			foreach($newsList as $news){
 		?>
-			<li><a href="<?php echo $this->createUrl('news/view',array('id'=>$news->news_id)); ?>">【新闻】<?php echo MyFunction::cutStr($news->title,29); ?></a></li>
+			<li><a href="<?php echo $this->createUrl('news/view',array('id'=>$news->news_id)); ?>">【新闻】<?php echo MyFunction::cutStr($news->title,28); ?></a></li>
 		<?php 
 				$i++; 
 			}

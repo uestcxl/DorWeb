@@ -30,7 +30,10 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->renderPartial('index');
+		$News = $this->listNews();
+		$Files = $this->listFiles();
+
+		$this->renderPartial('index',array('listNews'=>$News,'listFiles'=>$Files));
 	}
 
 	/**
@@ -89,5 +92,23 @@ class SiteController extends Controller
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
+	}
+
+	public function listNews()
+	{
+		$criteria = new CDbCriteria;
+		$criteria->order = 'time desc';
+		$criteria->limit = 7;		
+		$model=News::model()->findAll($criteria);		
+		return $model;
+	}
+
+	public function listFiles()
+	{
+		$criteria = new CDbCriteria;
+		$criteria->order = 'time desc';
+		$criteria->limit = 7;		
+		$model=Files::model()->findAll($criteria);		
+		return $model;
 	}
 }
