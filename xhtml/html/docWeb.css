@@ -43,6 +43,8 @@ body#feature a#featureLink {
 .placeholder {
 	height: 30px;
 	background: url(images/blue_bg.png) repeat-x;
+	width: 100%;
+	min-width: 1120px;
 }
 #head {
 	width: 100%;
@@ -58,10 +60,12 @@ body#feature a#featureLink {
 }
 .hey {
 	width: 100%;
+	min-width: 1120px;
 	background: url(images/blue_bg.png) repeat-x;
 }
 .shape {
 	width: 100%;
+	min-width: 1120px;
 	background: url(images/background_shapes.png) top center no-repeat;
 	background-position-y: -152px;
 }
@@ -230,8 +234,11 @@ img.dushu {
 /*********************************************************************Foot**********************************************/
 #foot {
 	background: url(images/dark_grey_bg.png) ;
-	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	margin-top: 50px;
+	width: 100%;
+	min-width: 1120px;
 }
 .lianjie {
 	text-align: center;
