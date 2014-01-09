@@ -1,38 +1,13 @@
 <head>
-    <title>更多新闻</title>
+    <title>全部新闻</title>
     <link href="<? echo Yii::app()->baseURL; ?>/xhtml/html/information.css" rel="stylesheet" type="text/css" />
 </head>
 
 <div class="holder"></div>
 <div class="news clearfix">
-<div class="left_news">
-    <ul>　
-        <li class="title">热点新闻</li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
+    <ul>
+        <?php foreach($model as $news){ ?>　
+            <li><a href="<?php echo $this->createUrl('news/view',array('id'=>$news->news_id)); ?>">【新闻】<?php echo MyFunction::cutStr($news->title,100); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="FF6600"><?php echo substr($news->time,0,10); ?></font></a></li>
+        <?php } ?>
     </ul>
- </div>
-<div class="right_news">
-    <ul>　
-        <li class="title">热点新闻</li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>
-        <li><a href="information.html">【新闻】加强心育功能 促进学生全面发展</a></li>     
-    </ul>
-</div>
 </div>

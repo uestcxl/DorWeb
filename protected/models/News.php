@@ -28,7 +28,7 @@ class News extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('title, content', 'required'),
-			array('title', 'length', 'max'=>50),
+			array('title', 'length', 'max'=>80),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('news_id, title, content, time', 'safe', 'on'=>'search'),
