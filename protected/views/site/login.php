@@ -1,13 +1,12 @@
-
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=Utf-8">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=Utf-8">
 	<title>Login</title>
 	<style type="text/css"></style>
+    <link href="<? echo Yii::app()->baseURL; ?>/xhtml/html/download.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="<? echo Yii::app()->baseURL; ?>/xhtml/html/login.css">
-	</head>
-<body>
-	<br><br><br><br><br>
+</head>
+<div class="holder"></div>
+<center>
 	<form name="login" method="post" action="login">
 		<table width="545" border="0" align="center" cellpadding="0" cellspacing="0">
 			<tbody><tr><td colspan="3"><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_1.gif" width="545" height="94" alt=""></td>
@@ -24,7 +23,10 @@
 								</tr>
 								<tr>
 									<td height="20" colspan="2" align="center">
-									<input name="login" type="submit" class="login" value="Login" ></td></tr></tbody></table></td>
+									<input name="login" type="submit" class="login" value="Login" ></td></tr>
+							</tbody>
+						</table>
+					</td>
 									<td>
 										<img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_4.gif" width="146" height="14" alt=""></td>
 									<td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/spacer.gif" width="1" height="14" alt=""></td>
@@ -35,7 +37,8 @@
 									<td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/spacer.gif" width="1" height="147" alt=""></td></tr>
 									<tr><td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_7.gif" width="308" height="62" alt=""></td>
 										<td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/spacer.gif" width="1" height="62" alt=""></td></tr>
-										<input type="hidden" name="timeout" size="10" value="20" put="0"></tbody></table>
+										<input type="hidden" name="timeout" size="10" value="20" put="0">
+			</tbody>
+		</table>
 			</form>
-	</body>
-</html>
+</center>

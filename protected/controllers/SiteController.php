@@ -82,7 +82,7 @@ class SiteController extends Controller
 				$this->redirect('index');
 		}
 		// display the login form
-		$this->renderPartial('login',array('model'=>$model));
+		$this->render('login',array('model'=>$model));
 	}
 
 	/**

@@ -43,7 +43,7 @@
     <p>
     <ul>
         <?php foreach($listFiles as $file){ ?>
-            <li><?php echo MyFunction::subStr($file->file_name,35);?></li>
+            <li><?php echo $file->file_name;?></li>
         <?php } ?>
     </ul>
     <p class="front"><a href="<?php echo $this->createUrl('files/index',array()); ?>">资料下载</a></p>
@@ -71,7 +71,7 @@
     <p>
     <ul>
         <?php foreach($listFiles as $file){ ?>
-            <li><?php echo MyFunction::subStr($file->file_name,35);?></li>
+            <li><?php echo $file->file_name;?></li>
         <?php } ?>
     </ul>
     <p class="front"><a href="<?php echo $this->createUrl('files/index',array()); ?>">资料下载</a></p>

@@ -1,8 +1,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=Utf-8">
-    <title>Login</title>
+    <title>Sign Up</title>
     <style type="text/css"></style>
-    <link href="<? echo Yii::app()->baseURL; ?>/xhtml/html/information.css" rel="stylesheet" type="text/css" />
+    <link href="<? echo Yii::app()->baseURL; ?>/xhtml/html/download.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="<? echo Yii::app()->baseURL; ?>/xhtml/html/login.css">
     </head>
 <div class="holder"></div>
