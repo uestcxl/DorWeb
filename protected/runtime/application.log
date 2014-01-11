@@ -1273,3 +1273,1785 @@ Stack trace:
 REQUEST_URI=/DorWeb/index.php/site/index
 HTTP_REFERER=http://localhost/DorWeb/index.php/news/view
 ---
+2014/01/10 22:03:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:03:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:04:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:04:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:05:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:05:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:05:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:05:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:07:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:07:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:07:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:07:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:15:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:15:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:16:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:16:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:17:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:20:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:22:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:22:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:22:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:22:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:22:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:22:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:23:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/10 22:23:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:06:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:06:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:08:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:08:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:25:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ueditor".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('ueditor')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('ueditor')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/ueditor/th...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/ueditor/themes/default/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ueditor".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('ueditor')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('ueditor')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/ueditor/th...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/ueditor/themes/default/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:25:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:25:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:27:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:27:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:32:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:32:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:33:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:33:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:33:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:33:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:33:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:33:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:34:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:34:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:34:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:34:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:34:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:34:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:35:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:35:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:37:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:37:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:41:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:41:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:41:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:41:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:42:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:42:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:42:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:42:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:42:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedlang".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedlang')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedlang')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedl...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
+2014/01/11 11:42:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedthemes".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('undefinedthemes')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('undefinedthemes')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('news/undefinedt...')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/news/undefinedthemes/default/css/ueditor.css
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/create
+---
