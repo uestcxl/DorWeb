@@ -130,6 +130,7 @@ body#download a#downloadLink {
 ul.content {
 	width: 900px;
 	margin: 0 auto;
+	min-height: 350px;
 }
 ul.content li {
 	width: 100%;

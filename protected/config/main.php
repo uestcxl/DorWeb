@@ -55,8 +55,8 @@ return array(
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=DorWeb',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => 'xulei123',
+			'username' => 'dorweb',
+			'password' => 'root',
 			'charset' => 'utf8',
 		),
 		/*'db'=>array(
@@ -92,6 +92,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'865492652@qq.com',
 	),
 );
