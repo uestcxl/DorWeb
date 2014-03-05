@@ -38,14 +38,14 @@ return array(
 		),
 		// uncomment the following to enable URLs in path-format
 		
-		'urlManager'=>array(
+/*		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
-		),
+		),*/
 		
 		//'db'=>array(
 		//	'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
@@ -55,8 +55,8 @@ return array(
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=DorWeb',
 			'emulatePrepare' => true,
-			'username' => 'dorweb',
-			'password' => 'root',
+			'username' => 'root',
+			'password' => 'xulei123',
 			'charset' => 'utf8',
 		),
 		/*'db'=>array(
