@@ -14,8 +14,6 @@
                 background-color: white;
                 float: none!important ;
                 line-height: 30px;
-                padding-left: 0px!important;
-                padding-right: 0px!important;
             }
         </style>
     </head>
@@ -31,15 +29,15 @@
             <li><a href="<?php echo $this->createUrl('site/contact',array()); ?>" id="about_usLink">关于我们</a></li>
             <li><a href="#">学生分会</a>
                 <ul>
-                    <li class="nonefloat">
-                        <a href="#">Menu 1-1aaaaaaaaaa</a>
-                    </li>
-                    <li class="nonefloat">
-                        <a href="#">Menu 1-2aa</a>
-                    </li>
-                    <li class="nonefloat">
-                        <a href="#">Menu 1-3dddddddddddddddd</a>
-                    </li>
+                    <?php 
+                    $criteria=new CDbCriteria;
+                    $criteria->order='id desc';
+                    $stuunion=StuUnion::model()->findAll($criteria);
+                    foreach ($stuunion as $links) {?>
+                        <li class="nonefloat">
+                            <a href="<?php echo $links->links;?>" target="_blank"><?php echo $links->name;?></a>
+                        </li>
+                    <?php };?>
                 </ul>
             </li>
             <?php if(Yii::app()->user->name===ADMIN){ ?>

@@ -4,6 +4,20 @@
     <head>
         <title>资料下载</title>
         <link href="<?php echo Yii::app()->baseURL; ?>/xhtml/html/download.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+            ul ul{
+                visibility: hidden;
+                position: absolute;
+            }
+            ul li:hover ul {
+                visibility: visible;
+            }
+            .nonefloat {
+                background-color: white;
+                float: none!important ;
+                line-height: 30px;
+            }
+        </style>
     </head>
     <body id="download">
         <div class="placeholder"></div>
@@ -15,6 +29,19 @@
             <li><a href="<?php echo $this->createUrl('news/view',array()); ?>" id="informationLink">新 闻</a></li>
             <li><a href="<?php echo $this->createUrl('files/index',array()); ?>" id="downloadLink">资料下载</a></li>
             <li><a href="<?php echo $this->createUrl('site/contact',array()); ?>" id="about_usLink">关于我们</a></li>
+            <li><a href="#">学生分会</a>
+                <ul>
+                    <?php 
+                    $criteria=new CDbCriteria;
+                    $criteria->order='id desc';
+                    $stuunion=StuUnion::model()->findAll($criteria);
+                    foreach ($stuunion as $links) {?>
+                        <li class="nonefloat">
+                            <a href="<?php echo $links->links;?>" target="_blank"><?php echo $links->name;?></a>
+                        </li>
+                    <?php };?>
+                </ul>
+            </li>
            <?php if(Yii::app()->user->name===ADMIN){ ?>
                 <li><a href="<?php echo $this->createUrl('news/admin',array()); ?>" id="backLink">后台管理</a></li>
             <?php }?>

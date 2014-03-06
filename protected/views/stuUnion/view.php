@@ -4,6 +4,6 @@
 
 <ul>
 	<?php foreach ($model as $links){?>
-		<li><a href="<?php echo $links->links;?>"><?php echo $links->name?></a></li>
+		<li><a href="<?php echo $links->links;?>"><?php echo $links->name;?></a></li>
 	<?php }?>
 </ul>

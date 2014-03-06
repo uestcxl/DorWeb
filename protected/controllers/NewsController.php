@@ -48,12 +48,16 @@ class NewsController extends Controller
 	 */
 	public function actionView($id=0)
 	{
+		$criteria=new CDbCriteria;
+		$criteria->order='id desc';
+		$stuunion=StuUnion::model()->findAll($criteria);
 		if($id==0)
 			$model=News::model()->lastNews();
 		else
 			$model=$this->loadModel($id);
 		$this->render('view',array(
 			'model'=>$model,
+			'stuunion'=>$stuunion,
 		));
 	}
 
@@ -137,8 +141,7 @@ class NewsController extends Controller
 	{
 		$criteria = new CDbCriteria;
 		$criteria->order = 'time desc';		
-		$model=News::model()->findAll($criteria);
-		
+		$model=News::model()->findAll($criteria);		
 		$this->render('index',array(
 			'model'=>$model,
 		));
