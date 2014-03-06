@@ -1,6 +1,6 @@
 <head>
 	<title>新闻 - <?php if($model!=NULL) echo $model->title; ?></title>
-	<link href="<? echo Yii::app()->baseURL; ?>/xhtml/html/information.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo Yii::app()->baseURL; ?>/xhtml/html/information.css" rel="stylesheet" type="text/css" />
 </head>
 <div class="holder"></div>
 <!--****************************************************************************mainContent-********************************************************************************-->

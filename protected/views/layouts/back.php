@@ -38,12 +38,15 @@
         <div class="bg"><a href="<?php echo $this->createUrl('news/create',array()); ?>">写新闻</a></div>
     <?php }if($this->button===2){ ?>
         <div class="bg"><a href="<?php echo $this->createUrl('user/admin',array()); ?>">用户管理</a></div>
+    <?php }if($this->button===3){ ?>
+        <div class="bg"><a href="<?php echo $this->createUrl('stuUnion/create',array()); ?>">新建分会</a></div>
     <?php }?>
     <div class="clearfix">
     <ul class="editor">
         <li><a href="<?php echo $this->createUrl('news/admin',array()); ?>" <?php if(!$this->button===0) echo 'id="news"';?>>管理新闻</a></li>
         <li><a href="<?php echo $this->createUrl('files/admin',array()); ?>" <?php if($this->button===1) echo 'id="upload"';?>>管理文件</a></li>
-        <li><a href="<?php echo $this->createUrl('user/admin',array()); ?>" <?php if($this->button===2) echo 'id="useradmin"';?>>用户管理</a></li>
+        <li><a href="<?php echo $this->createUrl('user/admin',array()); ?>" <?php if($this->button===2) echo 'id="useradmin"';?>>管理用户</a></li>
+        <li><a href="<?php echo $this->createUrl('stuUnion/admin',array());?>" <?php if($this->button===3) echo 'id="stuunion"';?>>管理分会</a></li>
     </ul>
     <div  class="content">
 

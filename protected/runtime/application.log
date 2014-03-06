@@ -3606,3 +3606,717 @@ Stack trace:
 REQUEST_URI=/DorWeb/index.php/user/3
 HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
 ---
+2014/03/06 10:57:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/DorWeb/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/DorWeb/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/DorWeb/index.php/user/Delete/2
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 10:57:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/DorWeb/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/DorWeb/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/DorWeb/index.php/user/Delete/2
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 11:00:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/user/1
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 11:01:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/DorWeb/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/DorWeb/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/DorWeb/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('view')
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#9 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/DorWeb/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/DorWeb/index.php/user/1
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 11:01:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/DorWeb/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/DorWeb/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/DorWeb/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('view')
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#9 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/DorWeb/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/DorWeb/index.php/user/1
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 11:20:20 [error] [php] Trying to get property of non-object (/var/www/DorWeb/protected/views/user/view.php:5)
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(869): UserController->renderFile()
+#1 /var/www/DorWeb/framework/web/CController.php(782): UserController->renderPartial()
+#2 /var/www/DorWeb/protected/controllers/UserController.php(58): UserController->render()
+#3 unknown(0): UserController->actionView()
+#4 /var/www/DorWeb/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#5 /var/www/DorWeb/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#8 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/DorWeb/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#11 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/DorWeb/framework/web/CController.php(265): UserController->runActionWithFilters()
+#14 /var/www/DorWeb/framework/web/CWebApplication.php(282): UserController->run()
+#15 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/DorWeb/index.php(15): CWebApplication->run()
+REQUEST_URI=/DorWeb/index.php/user/1
+in /var/www/DorWeb/protected/views/user/view.php (5)
+in /var/www/DorWeb/protected/controllers/UserController.php (58)
+in /var/www/DorWeb/index.php (15)
+2014/03/06 11:26:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/DorWeb/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/DorWeb/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/DorWeb/index.php/user/Delete/2
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 11:29:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/DorWeb/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/DorWeb/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/DorWeb/index.php/user/Delete/2
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 11:29:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/DorWeb/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/DorWeb/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/DorWeb/index.php/user/Delete/2
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 11:29:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/DorWeb/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/DorWeb/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/DorWeb/index.php/user/Delete/2
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 11:32:26 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/DorWeb/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/DorWeb/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/DorWeb/index.php/user/Delete/2
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 11:39:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/DorWeb/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/DorWeb/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/DorWeb/index.php/user/Delete/1
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 11:45:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/DorWeb/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/DorWeb/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/DorWeb/index.php/user/Delete/2
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 11:46:21 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/DorWeb/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/DorWeb/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/DorWeb/index.php/user/Delete/1
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 11:50:21 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/DorWeb/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/DorWeb/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/DorWeb/index.php/user/Delete/2
+---
+2014/03/06 11:51:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/DorWeb/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('Delete')
+#9 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Delete')
+#10 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/DorWeb/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/DorWeb/index.php/user/Delete/1
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 11:57:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/DorWeb/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/DorWeb/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/DorWeb/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('DeleteUser')
+#8 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/DeleteUser')
+#9 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/DorWeb/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/DorWeb/index.php/user/DeleteUser/2
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 12:08:55 [error] [php] Trying to get property of non-object (/var/www/DorWeb/protected/views/stuUnion/admin.php:5)
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(869): StuUnionController->renderFile()
+#1 /var/www/DorWeb/framework/web/CController.php(782): StuUnionController->renderPartial()
+#2 /var/www/DorWeb/protected/controllers/StuUnionController.php(149): StuUnionController->render()
+#3 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): StuUnionController->actionAdmin()
+#4 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): StuUnionController->runAction()
+#6 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/DorWeb/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): StuUnionController->filterAccessControl()
+#9 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/DorWeb/framework/web/CController.php(265): StuUnionController->runActionWithFilters()
+#12 /var/www/DorWeb/framework/web/CWebApplication.php(282): StuUnionController->run()
+#13 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/DorWeb/index.php(15): CWebApplication->run()
+REQUEST_URI=/DorWeb/index.php/stuUnion/admin
+in /var/www/DorWeb/protected/views/stuUnion/admin.php (5)
+in /var/www/DorWeb/protected/controllers/StuUnionController.php (149)
+in /var/www/DorWeb/index.php (15)
+2014/03/06 12:54:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'order clause'. The SQL statement executed was: SELECT * FROM `stu_union` `t` ORDER BY user_id desc.
+in /var/www/DorWeb/protected/controllers/StuUnionController.php (145)
+in /var/www/DorWeb/index.php (15)
+2014/03/06 12:54:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'order clause'. The SQL statement executed was: SELECT * FROM `stu_union` `t` ORDER BY user_id desc' in /var/www/DorWeb/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/DorWeb/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/DorWeb/protected/controllers/StuUnionController.php(145): CActiveRecord->findAll(Object(CDbCriteria))
+#4 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): StuUnionController->actionAdmin()
+#5 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('admin')
+#14 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('stuUnion/admin')
+#15 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/DorWeb/index.php(15): CApplication->run()
+#17 {main}
+REQUEST_URI=/DorWeb/index.php/stuUnion/admin
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 12:54:53 [error] [exception.CException] exception 'CException' with message 'Property "StuUnion.school" is not defined.' in /var/www/DorWeb/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(145): CComponent->__get('school')
+#1 /var/www/DorWeb/protected/views/stuUnion/admin.php(6): CActiveRecord->__get('school')
+#2 /var/www/DorWeb/framework/web/CBaseController.php(126): require('/var/www/DorWeb...')
+#3 /var/www/DorWeb/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/DorWeb...', Array, true)
+#4 /var/www/DorWeb/framework/web/CController.php(869): CBaseController->renderFile('/var/www/DorWeb...', Array, true)
+#5 /var/www/DorWeb/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#6 /var/www/DorWeb/protected/controllers/StuUnionController.php(148): CController->render('admin', Array)
+#7 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): StuUnionController->actionAdmin()
+#8 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('admin')
+#17 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('stuUnion/admin')
+#18 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/DorWeb/index.php(15): CApplication->run()
+#20 {main}
+REQUEST_URI=/DorWeb/index.php/stuUnion/admin
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 13:01:29 [error] [exception.CException] exception 'CException' with message 'Property "StuUnionController.links" is not defined.' in /var/www/DorWeb/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/DorWeb/protected/views/stuUnion/admin.php(6): CComponent->__get('links')
+#1 /var/www/DorWeb/framework/web/CBaseController.php(126): require('/var/www/DorWeb...')
+#2 /var/www/DorWeb/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/DorWeb...', Array, true)
+#3 /var/www/DorWeb/framework/web/CController.php(869): CBaseController->renderFile('/var/www/DorWeb...', Array, true)
+#4 /var/www/DorWeb/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#5 /var/www/DorWeb/protected/controllers/StuUnionController.php(148): CController->render('admin', Array)
+#6 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): StuUnionController->actionAdmin()
+#7 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('admin')
+#16 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('stuUnion/admin')
+#17 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/DorWeb/index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/DorWeb/index.php/stuUnion/admin
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/admin
+---
+2014/03/06 13:03:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uestc.edu.cn".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('uestc.edu.cn')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('uestc.edu.cn')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('stuUnion/uestc....')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/stuUnion/uestc.edu.cn
+HTTP_REFERER=http://localhost/DorWeb/index.php/stuUnion/admin
+---
+2014/03/06 13:07:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uestc.edu.cn".' in /var/www/DorWeb/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CController.php(270): CController->missingAction('uestc.edu.cn')
+#1 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('uestc.edu.cn')
+#2 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('stuUnion/uestc....')
+#3 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/DorWeb/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/DorWeb/index.php/stuUnion/uestc.edu.cn
+---
+2014/03/06 13:18:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "stuUion/DeleteStu".' in /var/www/DorWeb/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('stuUion/DeleteS...')
+#1 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/DorWeb/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/DorWeb/index.php/stuUion/DeleteStu/2
+HTTP_REFERER=http://localhost/DorWeb/index.php/stuUnion/admin
+---
+2014/03/06 13:37:06 [error] [exception.CException] exception 'CException' with message 'Property "StuUnion.分会主页地址" is not defined.' in /var/www/DorWeb/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(145): CComponent->__get('???????????????...')
+#1 /var/www/DorWeb/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('???????????????...')
+#2 /var/www/DorWeb/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(StuUnion), '???????????????...')
+#3 /var/www/DorWeb/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(StuUnion), '???????????????...', Array)
+#4 /var/www/DorWeb/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(StuUnion), '???????????????...', Array)
+#5 /var/www/DorWeb/protected/views/stuUnion/_form.php(24): CActiveForm->textField(Object(StuUnion), '???????????????...', Array)
+#6 /var/www/DorWeb/framework/web/CBaseController.php(126): require('/var/www/DorWeb...')
+#7 /var/www/DorWeb/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/DorWeb...', Array, true)
+#8 /var/www/DorWeb/framework/web/CController.php(869): CBaseController->renderFile('/var/www/DorWeb...', Array, true)
+#9 /var/www/DorWeb/protected/views/stuUnion/create.php(6): CController->renderPartial('_form', Array)
+#10 /var/www/DorWeb/framework/web/CBaseController.php(126): require('/var/www/DorWeb...')
+#11 /var/www/DorWeb/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/DorWeb...', Array, true)
+#12 /var/www/DorWeb/framework/web/CController.php(869): CBaseController->renderFile('/var/www/DorWeb...', Array, true)
+#13 /var/www/DorWeb/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#14 /var/www/DorWeb/protected/controllers/StuUnionController.php(76): CController->render('create', Array)
+#15 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): StuUnionController->actionCreate()
+#16 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#23 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('create')
+#25 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('stuUnion/create')
+#26 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#27 /var/www/DorWeb/index.php(15): CApplication->run()
+#28 {main}
+REQUEST_URI=/DorWeb/index.php/stuUnion/create
+HTTP_REFERER=http://localhost/DorWeb/index.php/stuUnion/admin
+---
+2014/03/06 13:42:08 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in /var/www/DorWeb/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(161): CComponent->__set('password', '')
+#1 /var/www/DorWeb/framework/base/CModel.php(607): CActiveRecord->__set('password', '')
+#2 /var/www/DorWeb/protected/controllers/UserController.php(139): CModel->offsetSet('password', '')
+#3 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): UserController->actionPwChange()
+#4 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('PwChange')
+#13 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/PwChange')
+#14 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/DorWeb/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/DorWeb/index.php/user/PwChange
+HTTP_REFERER=http://localhost/DorWeb/index.php/news/admin
+---
+2014/03/06 13:44:19 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in /var/www/DorWeb/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(161): CComponent->__set('password', 'test')
+#1 /var/www/DorWeb/framework/base/CModel.php(472): CActiveRecord->__set('password', 'test')
+#2 /var/www/DorWeb/framework/base/CComponent.php(152): CModel->setAttributes(Array)
+#3 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(161): CComponent->__set('attributes', Array)
+#4 /var/www/DorWeb/protected/controllers/UserController.php(76): CActiveRecord->__set('attributes', Array)
+#5 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#6 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#16 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/DorWeb/index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/DorWeb/index.php/user/create
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/create
+---
+2014/03/06 13:47:18 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in /var/www/DorWeb/protected/controllers/UserController.php (76)
+in /var/www/DorWeb/index.php (15)
+2014/03/06 13:47:18 [error] [exception.CException] exception 'CException' with message 'Property "User.password_repeat" is not defined.' in /var/www/DorWeb/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(161): CComponent->__set('password_repeat', 'test')
+#1 /var/www/DorWeb/framework/base/CModel.php(472): CActiveRecord->__set('password_repeat', 'test')
+#2 /var/www/DorWeb/framework/base/CComponent.php(152): CModel->setAttributes(Array)
+#3 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(161): CComponent->__set('attributes', Array)
+#4 /var/www/DorWeb/protected/controllers/UserController.php(76): CActiveRecord->__set('attributes', Array)
+#5 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#6 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#16 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/DorWeb/index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/DorWeb/index.php/user/create
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/create
+---
+2014/03/06 13:47:46 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in /var/www/DorWeb/protected/controllers/UserController.php (76)
+in /var/www/DorWeb/index.php (15)
+2014/03/06 13:47:46 [error] [exception.CException] exception 'CException' with message 'Property "User.password_repeat" is not defined.' in /var/www/DorWeb/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(161): CComponent->__set('password_repeat', 'test')
+#1 /var/www/DorWeb/framework/base/CModel.php(472): CActiveRecord->__set('password_repeat', 'test')
+#2 /var/www/DorWeb/framework/base/CComponent.php(152): CModel->setAttributes(Array)
+#3 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(161): CComponent->__set('attributes', Array)
+#4 /var/www/DorWeb/protected/controllers/UserController.php(76): CActiveRecord->__set('attributes', Array)
+#5 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#6 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#16 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/DorWeb/index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/DorWeb/index.php/user/create
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/create
+---
+2014/03/06 13:48:53 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in /var/www/DorWeb/protected/controllers/UserController.php (76)
+in /var/www/DorWeb/index.php (15)
+2014/03/06 13:48:53 [error] [exception.CException] exception 'CException' with message 'Property "User.passwd_repeat" is not defined.' in /var/www/DorWeb/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(145): CComponent->__get('passwd_repeat')
+#1 /var/www/DorWeb/framework/validators/CCompareValidator.php(92): CActiveRecord->__get('passwd_repeat')
+#2 /var/www/DorWeb/framework/validators/CValidator.php(213): CCompareValidator->validateAttribute(Object(User), 'passwd')
+#3 /var/www/DorWeb/framework/base/CModel.php(159): CValidator->validate(Object(User), NULL)
+#4 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(805): CModel->validate(NULL)
+#5 /var/www/DorWeb/protected/controllers/UserController.php(77): CActiveRecord->save()
+#6 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#7 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#17 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/DorWeb/index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/DorWeb/index.php/user/create
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/create
+---
+2014/03/06 13:49:42 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in /var/www/DorWeb/protected/controllers/UserController.php (76)
+in /var/www/DorWeb/index.php (15)
+2014/03/06 13:49:42 [error] [exception.CException] exception 'CException' with message 'Property "User.passwd_repeat" is not defined.' in /var/www/DorWeb/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(145): CComponent->__get('passwd_repeat')
+#1 /var/www/DorWeb/framework/validators/CCompareValidator.php(92): CActiveRecord->__get('passwd_repeat')
+#2 /var/www/DorWeb/framework/validators/CValidator.php(213): CCompareValidator->validateAttribute(Object(User), 'passwd')
+#3 /var/www/DorWeb/framework/base/CModel.php(159): CValidator->validate(Object(User), NULL)
+#4 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(805): CModel->validate(NULL)
+#5 /var/www/DorWeb/protected/controllers/UserController.php(77): CActiveRecord->save()
+#6 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#7 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#17 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/DorWeb/index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/DorWeb/index.php/user/create
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/create
+---
+2014/03/06 13:52:44 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in /var/www/DorWeb/protected/controllers/UserController.php (76)
+in /var/www/DorWeb/index.php (15)
+2014/03/06 13:52:44 [error] [exception.CException] exception 'CException' with message 'Property "User.passwd_repeat" is not defined.' in /var/www/DorWeb/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(145): CComponent->__get('passwd_repeat')
+#1 /var/www/DorWeb/framework/validators/CCompareValidator.php(92): CActiveRecord->__get('passwd_repeat')
+#2 /var/www/DorWeb/framework/validators/CValidator.php(213): CCompareValidator->validateAttribute(Object(User), 'passwd')
+#3 /var/www/DorWeb/framework/base/CModel.php(159): CValidator->validate(Object(User), NULL)
+#4 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(805): CModel->validate(NULL)
+#5 /var/www/DorWeb/protected/controllers/UserController.php(77): CActiveRecord->save()
+#6 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#7 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#17 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/DorWeb/index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/DorWeb/index.php/user/create
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/create
+---
+2014/03/06 13:58:04 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in /var/www/DorWeb/protected/controllers/UserController.php (76)
+in /var/www/DorWeb/index.php (15)
+2014/03/06 13:58:04 [error] [exception.CException] exception 'CException' with message 'Property "User.password_repeat" is not defined.' in /var/www/DorWeb/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(161): CComponent->__set('password_repeat', 'test')
+#1 /var/www/DorWeb/framework/base/CModel.php(472): CActiveRecord->__set('password_repeat', 'test')
+#2 /var/www/DorWeb/framework/base/CComponent.php(152): CModel->setAttributes(Array)
+#3 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(161): CComponent->__set('attributes', Array)
+#4 /var/www/DorWeb/protected/controllers/UserController.php(76): CActiveRecord->__set('attributes', Array)
+#5 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#6 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#16 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/DorWeb/index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/DorWeb/index.php/user/create
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/create
+---
+2014/03/06 13:58:22 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in /var/www/DorWeb/protected/controllers/UserController.php (76)
+in /var/www/DorWeb/index.php (15)
+2014/03/06 13:58:22 [error] [exception.CException] exception 'CException' with message 'Property "User.password_repeat" is not defined.' in /var/www/DorWeb/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(161): CComponent->__set('password_repeat', 'test')
+#1 /var/www/DorWeb/framework/base/CModel.php(472): CActiveRecord->__set('password_repeat', 'test')
+#2 /var/www/DorWeb/framework/base/CComponent.php(152): CModel->setAttributes(Array)
+#3 /var/www/DorWeb/framework/db/ar/CActiveRecord.php(161): CComponent->__set('attributes', Array)
+#4 /var/www/DorWeb/protected/controllers/UserController.php(76): CActiveRecord->__set('attributes', Array)
+#5 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#6 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#16 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/DorWeb/index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/DorWeb/index.php/user/create
+HTTP_REFERER=http://localhost/DorWeb/index.php/user/create
+---
+2014/03/06 13:58:36 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in /var/www/DorWeb/protected/controllers/UserController.php (76)
+in /var/www/DorWeb/index.php (15)
+2014/03/06 13:58:36 [warning] [application] Failed to set unsafe attribute "password_repeat" of "User".
+in /var/www/DorWeb/protected/controllers/UserController.php (76)
+in /var/www/DorWeb/index.php (15)
+2014/03/06 13:58:45 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in /var/www/DorWeb/protected/controllers/UserController.php (76)
+in /var/www/DorWeb/index.php (15)
+2014/03/06 13:58:45 [warning] [application] Failed to set unsafe attribute "password_repeat" of "User".
+in /var/www/DorWeb/protected/controllers/UserController.php (76)
+in /var/www/DorWeb/index.php (15)

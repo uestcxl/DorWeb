@@ -1,55 +1,7 @@
-<?php
-/* @var $this StuUnionController */
-/* @var $model StuUnion */
-
-$this->breadcrumbs=array(
-	'Stu Unions'=>array('index'),
-	'Manage',
-);
-
-$this->menu=array(
-	array('label'=>'List StuUnion', 'url'=>array('index')),
-	array('label'=>'Create StuUnion', 'url'=>array('create')),
-);
-
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
-});
-$('.search-form form').submit(function(){
-	$('#stu-union-grid').yiiGridView('update', {
-		data: $(this).serialize()
-	});
-	return false;
-});
-");
-?>
-
-<h1>Manage Stu Unions</h1>
-
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
-
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'stu-union-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'id',
-		'links',
-		'name',
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>
+<head>
+	<title>管理分会</title>
+	<link href="<? echo Yii::app()->baseURL; ?>/xhtml/html/back.css" rel="stylesheet" type="text/css" />
+</head>
+	<?php foreach($model as $user){ ?>
+		<p>【分会】<?php echo $user->name; ?>::<span class="links"><a href="<?php echo $user->links;?>" target="_blank">分会主页</a></span><span class="shanchu"><a href="<?php echo $this->createUrl('stuUnion/DeleteStu',array('id'=>$user->id)); ?>"><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/shanchu.jpg" width="20" height="20" /></a></span></p>
+	<?php }?>

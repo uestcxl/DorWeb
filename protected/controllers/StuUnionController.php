@@ -2,11 +2,12 @@
 
 class StuUnionController extends Controller
 {
+	public $button=3;
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	//public $layout='//layouts/column2';
 
 	/**
 	 * @return array action filters
@@ -29,14 +30,10 @@ class StuUnionController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','create','deletestu'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -49,10 +46,13 @@ class StuUnionController extends Controller
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
-	public function actionView($id)
+	public function actionView()
 	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+		$criteria = new CDbCriteria;
+		$criteria->order = 'id desc';
+		$model=StuUnion::model()->findAll($criteria);
+		$this->render('admin',array(
+			'model'=>$model,
 		));
 	}
 
@@ -71,7 +71,7 @@ class StuUnionController extends Controller
 		{
 			$model->attributes=$_POST['StuUnion'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('admin','id'=>$model->id));
 		}
 
 		$this->render('create',array(
@@ -117,6 +117,15 @@ class StuUnionController extends Controller
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
+	public function actionDeleteStu($id)
+	{
+		$this->loadModel($id)->delete();
+
+		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+		if(!isset($_GET['ajax']))
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+	}
+
 	/**
 	 * Lists all models.
 	 */
@@ -133,11 +142,10 @@ class StuUnionController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new StuUnion('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['StuUnion']))
-			$model->attributes=$_GET['StuUnion'];
-
+		$this->layout='//layouts/column1';
+		$criteria = new CDbCriteria;
+		$criteria->order = 'id desc';
+		$model=StuUnion::model()->findAll($criteria);
 		$this->render('admin',array(
 			'model'=>$model,
 		));

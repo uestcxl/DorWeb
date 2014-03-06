@@ -3,13 +3,13 @@
 <META http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <head>
         <title>资料下载</title>
-        <link href="<? echo Yii::app()->baseURL; ?>/xhtml/html/download.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo Yii::app()->baseURL; ?>/xhtml/html/download.css" rel="stylesheet" type="text/css" />
     </head>
     <body id="download">
         <div class="placeholder"></div>
     <div id="head">
         <div class="header clearfix">
-            <img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/xiaohui.jpg" width="60" height="60px" />
+            <img src="<?php echo Yii::app()->baseURL; ?>/xhtml/html/images/xiaohui.jpg" width="60" height="60px" />
         <ul class="left clearfix">
             <li><a href="<?php echo $this->createUrl('site/index',array()); ?>" id="featureLink">主页</a></li>
             <li><a href="<?php echo $this->createUrl('news/view',array()); ?>" id="informationLink">新 闻</a></li>

@@ -1,18 +1,6 @@
-<?php
-/* @var $this StuUnionController */
-/* @var $model StuUnion */
-
-$this->breadcrumbs=array(
-	'Stu Unions'=>array('index'),
-	'Create',
-);
-
-$this->menu=array(
-	array('label'=>'List StuUnion', 'url'=>array('index')),
-	array('label'=>'Manage StuUnion', 'url'=>array('admin')),
-);
-?>
-
-<h1>Create StuUnion</h1>
+<head>
+	<title>新建分会</title>
+	<link href="<?php echo Yii::app()->baseURL; ?>/xhtml/html/back.css" rel="stylesheet" type="text/css" />
+</head>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

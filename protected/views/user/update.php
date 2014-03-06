@@ -10,7 +10,7 @@
     <form name="login" method="post" action="../user/PwChange">
         <table width="545" border="0" align="center" cellpadding="0" cellspacing="0">
             <tbody><tr><td colspan="3"><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_1-password.png" width="545" height="94" alt=""></td>
-                <td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/spacer.gif" width="1" height="94" alt=""></td></tr>
+                <td><img src="<?php echo Yii::app()->baseURL; ?>/xhtml/html/images/spacer.gif" width="1" height="94" alt=""></td></tr>
                 <tr><td><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/login_2.gif" width="91" height="14" alt=""></td>
                     <td rowspan="2" bgcolor="#FFFFFF">
                         <table width="50%" border="0" align="center" cellpadding="0" cellspacing="0" style="font-size:12px ">

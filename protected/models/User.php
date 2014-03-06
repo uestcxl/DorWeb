@@ -15,6 +15,7 @@
  */
 class User extends CActiveRecord
 {
+	public $passwd_repeat;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -31,18 +32,18 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_id, user_name, name, passwd, school,password_repeat, acmid, email, phone', 'required'),
+			array('user_id, user_name, name, passwd, school,passwd_repeat, acmid, email, phone', 'required'),
 			array('user_id', 'numerical', 'integerOnly'=>true),
 			array('user_name, name, phone', 'length', 'max'=>20),
 			array('passwd', 'length', 'max'=>50),
-			array('password', 'compare'),
+			array('passwd', 'compare'),
 			array('phone','length','max'=>11),
 			array('phone','numerical'),
 			array('school, email', 'length', 'max'=>45),
 			array('acmid', 'length', 'max'=>30),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('user_id, password_repeat, user_name, name, passwd, school, acmid, email, phone', 'safe', 'on'=>'search'),
+			array('user_id, passwd_repeat, user_name, name, passwd, school, acmid, email, phone', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,7 +68,7 @@ class User extends CActiveRecord
 			'user_name' => '用户名',
 			'name' => '姓名',
 			'passwd' => '密码',
-			'password_repeat'=> '确认密码',
+			'passwd_repeat'=> '确认密码',
 			'school' => '学校',
 			'acmid' => 'ACMID',
 			'email' => 'Email',
@@ -109,12 +110,12 @@ class User extends CActiveRecord
 
 	protected function afterValidate() {
 		parent::afterValidate();
-		if($this->password!==$this->password_repeat)
+		if($this->passwd!==$this->passwd_repeat)
 			echo "<script type='text/javascript'>
         			alert('请确认两次输入密码相同');
         			window.location.href = '../user/create';
     		 	</script>";		
-		$this->password = $this->encrypt($this->password);
+		$this->passwd = $this->encrypt($this->passwd);
 	}
 
 	public function encrypt($value) {

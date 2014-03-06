@@ -15,24 +15,27 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<br>
 
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'links'); ?>
+		<?php echo $form->labelEx($model,'分会主页'); ?>
 		<?php echo $form->textField($model,'links',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'links'); ?>
 	</div>
 
+	<br>
+
 	<div class="row">
-		<?php echo $form->labelEx($model,'name'); ?>
+		<?php echo $form->labelEx($model,'分会名称'); ?>
 		<?php echo $form->textField($model,'name',array('size'=>30,'maxlength'=>30)); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
+	<br><hr><br>
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? '新建' : '保存'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

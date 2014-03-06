@@ -1,6 +1,6 @@
 <head>
     <title>全部新闻</title>
-    <link href="<? echo Yii::app()->baseURL; ?>/xhtml/html/information.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo Yii::app()->baseURL; ?>/xhtml/html/information.css" rel="stylesheet" type="text/css" />
 </head>
 
 <div class="holder"></div>
