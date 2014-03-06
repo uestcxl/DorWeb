@@ -32,15 +32,18 @@
 </div>
 <!--*********************************************************mainContent************************************8-->
 <div class="manage ">
-    <?php if($this->button){ ?>
+    <?php if($this->button===1){ ?>
         <div class="bg"><a href="<?php echo $this->createUrl('files/create',array()); ?>">上传文件</a></div>
-    <?php }else{ ?>
+    <?php }if($this->button===0){ ?>
         <div class="bg"><a href="<?php echo $this->createUrl('news/create',array()); ?>">写新闻</a></div>
+    <?php }if($this->button===2){ ?>
+        <div class="bg"><a href="<?php echo $this->createUrl('user/admin',array()); ?>">用户管理</a></div>
     <?php }?>
     <div class="clearfix">
     <ul class="editor">
-        <li><a href="<?php echo $this->createUrl('news/admin',array()); ?>" <?php if(!$this->button) echo 'id="news"';?>>管理新闻</a></li>
-        <li><a href="<?php echo $this->createUrl('files/admin',array()); ?>" <?php if($this->button) echo 'id="upload"';?>>管理文件</a></li>
+        <li><a href="<?php echo $this->createUrl('news/admin',array()); ?>" <?php if(!$this->button===0) echo 'id="news"';?>>管理新闻</a></li>
+        <li><a href="<?php echo $this->createUrl('files/admin',array()); ?>" <?php if($this->button===1) echo 'id="upload"';?>>管理文件</a></li>
+        <li><a href="<?php echo $this->createUrl('user/admin',array()); ?>" <?php if($this->button===2) echo 'id="useradmin"';?>>用户管理</a></li>
     </ul>
     <div  class="content">
 

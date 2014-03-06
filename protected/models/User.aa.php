@@ -1,26 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "user_infor".
- *
- * The followings are the available columns in table 'user_infor':
- * @property integer $user_id
+ * This is the model class for table "user".
+ * git commit
+ * The followings are the available columns in table 'user':
+ * @property integer $id
  * @property string $user_name
- * @property string $name
- * @property string $passwd
- * @property string $school
- * @property string $acmid
- * @property string $email
- * @property string $phone
+ * @property string $password
  */
 class User extends CActiveRecord
 {
+	public $password_repeat;
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'user_infor';
+		return 'user';
 	}
 
 	/**
@@ -29,20 +25,15 @@ class User extends CActiveRecord
 	public function rules()
 	{
 		// NOTE: you should only define rules for those attributes that
-		// will receive user inputs.
 		return array(
-			array('user_id, user_name, name, passwd, school,password_repeat, acmid, email, phone', 'required'),
-			array('user_id', 'numerical', 'integerOnly'=>true),
-			array('user_name, name, phone', 'length', 'max'=>20),
-			array('passwd', 'length', 'max'=>50),
+			array('user_name, password ,password_repeat', 'required'),
+			array('user_name', 'length', 'max'=>20),
+			array('password', 'length', 'max'=>64),
 			array('password', 'compare'),
-			array('phone','length','max'=>11),
-			array('phone','numerical'),
-			array('school, email', 'length', 'max'=>45),
-			array('acmid', 'length', 'max'=>30),
+			array('password_repeat', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('user_id, password_repeat, user_name, name, passwd, school, acmid, email, phone', 'safe', 'on'=>'search'),
+			array('id, user_name', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -63,15 +54,10 @@ class User extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'user_id' => 'User',
+			'id' => 'User',
 			'user_name' => '用户名',
-			'name' => '姓名',
-			'passwd' => '密码',
+			'password' => '密码',
 			'password_repeat'=> '确认密码',
-			'school' => '学校',
-			'acmid' => 'ACMID',
-			'email' => 'Email',
-			'phone' => '电话',
 		);
 	}
 
@@ -89,17 +75,11 @@ class User extends CActiveRecord
 	 */
 	public function search()
 	{
-		// @todo Please modify the following code to remove attributes that should not be searched.
-
 		$criteria=new CDbCriteria;
-		$criteria->addCondition("user_name != 'ADMIN'");   //管理用户时不显示admin用户，防止意外删除
-		$criteria->compare('user_id',$this->user_id);
+ 		$criteria->addCondition("user_name != 'ADMIN'");   //管理用户时不显示admin用户，防止意外删除
+		$criteria->compare('id',$this->id,true);
 		$criteria->compare('user_name',$this->user_name,true);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('school',$this->school,true);
-		$criteria->compare('acmid',$this->acmid,true);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('phone',$this->phone,true);
+		$criteria->compare('password',$this->password,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -116,12 +96,12 @@ class User extends CActiveRecord
     		 	</script>";		
 		$this->password = $this->encrypt($this->password);
 	}
-
+	
 	public function encrypt($value) {
 		$value = $value."dreamfly";
 		return md5($value);
 	}
-
+	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
