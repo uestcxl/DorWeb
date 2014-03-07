@@ -17,9 +17,20 @@
                 float: none!important ;
                 line-height: 30px;
             }
+            html,body{
+                height: 100%;
+             }
+            #maincontaint{
+                min-height: 100%;
+                margin-bottom: -120px;
+            }
+            #footer,.push{
+                height: 120px;
+            } 
         </style>
     </head>
     <body id="download">
+            <div id="maincontaint">
         <div class="placeholder"></div>
     <div id="head">
         <div class="header clearfix">
@@ -66,6 +77,8 @@
         <li class="clearfix <?php if($i%2) echo 'even'; else echo 'odd'; ?>"><span class=" front"><span class="kemu"><?php echo MyFunction::cutStr($file->file_name,60); ?></span><span class="date"><?php echo $file->time; ?></span></span><a href="<?php echo $this->createUrl('files/download',array('id'=>$file->files_id)); ?>"><span class="xiazai"><img src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/down.png" height="30" title="下载" /></span></a></li>
     <?php $i++; }?>
 </ul>
+    <div id="push"></div>
+</div> 
 <div id="foot">
     <p class="lianjie">友情链接: <a href="http://www.uestc.edu.cn/">电子科大</a> <a href="http://bbs.stuhome.net/">清水河畔</a></p>
     <p class="copyright">Copyright 201工作室</p>

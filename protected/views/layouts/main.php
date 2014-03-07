@@ -15,9 +15,11 @@
                 float: none!important ;
                 line-height: 30px;
             }
+            }
         </style>
     </head>
     <body id="information">
+            <div id="maincontaint">
         <div class="placeholder"></div>
     <div id="head">
         <div class="header clearfix">
@@ -58,6 +60,8 @@
 
                         <?php echo $content; ?>
 
+    <div id="push"></div>
+</div> 
 <div id="foot">
     <p class="lianjie">友情链接: <a href="http://www.uestc.edu.cn/">电子科大</a> <a href="http://bbs.stuhome.net/">清水河畔</a></p>
     <p class="copyright">Copyright 201工作室</p>

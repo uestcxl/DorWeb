@@ -18,9 +18,21 @@
                 float: none!important ;
                 line-height: 30px;
             }
+
+            html,body{
+                height: 100%;
+             }
+            #maincontaint{
+                min-height: 100%;
+                margin-bottom: -120px;
+            }
+            #footer,.push{
+                height: 120px;
+            }          
         </style>
 </head>
     <body id="feature">
+    <div id="maincontaint">
         <div class="placeholder"></div>
     <div id="head">
         <div class="header clearfix">
@@ -59,53 +71,39 @@
     </div>
 </div>
 <div class="hey">
-<div class="shape">
-    <div id="mainContent" class="clearfix">
-
-    <img class="dushu" src="<? echo Yii::app()->baseURL; ?>/xhtml/html/images/dushu3.png" />
-<div class="one first">
-    <div class="left-hosting"></div>
-    <div class="border">
-    <h2>资料下载</h2>
-    <p>
-    <ul>
-        <?php foreach($listFiles as $file){ ?>
-            <li><?php echo $file->file_name;?></li>
-        <?php } ?>
-    </ul>
-    <p class="front"><a href="<?php echo $this->createUrl('files/index',array()); ?>">资料下载</a></p>
-</div>
-</div>
-<div class="one mid">
-    <div class="hosting"></div>
-    <div class="border">
-    <h2>新&nbsp;&nbsp;&nbsp;&nbsp;闻</h2>
-    <p>
-    <ul>
-        <?php
-            foreach($listNews as $news){
+<div class="zhuye clearfix">
+<div class="zhaiyao">
+    <p class="zuixinzixun">最新资讯<a href="<?php echo $this->createUrl('news/index',array('id'=>5));?>"><span class="gengduo">更多 <span class="dayu">>></span></span></a></p>
+    <ul class="zixun">
+        <?php 
+            $criteria=new CDbCriteria;
+            $criteria->order='time desc';
+            $news=News::model()->findAll($criteria);
+            $i=0;
+            foreach ($news as $new) { if($i<10){ $i++
         ?>
-            <li><a href="<?php echo $this->createUrl('news/view',array('id'=>$news->news_id)); ?>"><?php echo MyFunction::subStr($news->title,33); ?></a></li>
-        <?php }?>
+        <li class="clearfix"><span class="xinwen"><a href="<?php echo $this->createUrl('news/index',array('id'=>$new->news_id))?>"><?php echo MyFunction::cutStr($new->title,70);?></a></span><span class="date"></span></li>
+        <?php }}?>
     </ul>
-    <p class="front"><a href="<?php echo $this->createUrl('news/index',array()); ?>">更多新闻</a></p>
 </div>
-</div>
-<div class="one third">
-    <div class="hosting"></div>
-    <div class="border">
-    <h2>资料下载</h2>
-    <p>
-    <ul>
-        <?php foreach($listFiles as $file){ ?>
-            <li><?php echo $file->file_name;?></li>
-        <?php } ?>
+<div class="zuixinziliao">
+    <p class="ziliao">最新资料<a href="<?php echo $this->createUrl('files/index',array());?>"><span class="gengduo_right">更多 <span class="dayu">>></span></span></a></p>
+    <ul class="acm_ziliao">
+        <?php 
+            $criteria=new CDbCriteria;
+            $criteria->order='time desc';
+            $docs=Files::model()->findAll($criteria);
+            $i=0;
+            foreach ($docs as $doc) { if($i<=8) {$i++;
+        ?>
+        <li><a href="<?php echo $this->createUrl('files/index',array());?>"><?php echo MyFunction::cutStr($doc->file_name,38);?></a></li>
+        <?php }}?>
     </ul>
-    <p class="front"><a href="<?php echo $this->createUrl('files/index',array()); ?>">资料下载</a></p>
 </div>
 </div>
 </div>
-</div>
+    <div id="push"></div>
+</div> 
 <div id="foot">
     <p class="lianjie">友情链接: <a href="http://www.uestc.edu.cn/">电子科大</a> <a href="http://bbs.stuhome.net/">清水河畔</a></p>
     <p class="copyright">Copyright 201工作室</p>

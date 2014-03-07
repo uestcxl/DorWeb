@@ -1,8 +1,4 @@
-<?php
-/* @var $this UserController */
-/* @var $model User */
-/* @var $form CActiveForm */
-?>
+
 
 <div class="form">
 
@@ -20,12 +16,6 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'user_id'); ?>
-		<?php echo $form->textField($model,'user_id'); ?>
-		<?php echo $form->error($model,'user_id'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'user_name'); ?>
 		<?php echo $form->textField($model,'user_name',array('size'=>20,'maxlength'=>20)); ?>
 		<?php echo $form->error($model,'user_name'); ?>
@@ -40,6 +30,12 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'passwd'); ?>
 		<?php echo $form->passwordField($model,'passwd',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->error($model,'passwd'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'passwd_repeat'); ?>
+		<?php echo $form->passwordField($model,'passwd_repeat',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'passwd'); ?>
 	</div>
 

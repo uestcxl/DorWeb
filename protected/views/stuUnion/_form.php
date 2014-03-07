@@ -21,7 +21,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'分会主页'); ?>
-		<?php echo $form->textField($model,'links',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'links',array('size'=>60,'maxlength'=>255,'value'=>'http://')); ?>
 		<?php echo $form->error($model,'links'); ?>
 	</div>
 
