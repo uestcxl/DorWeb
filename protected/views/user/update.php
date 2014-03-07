@@ -16,8 +16,8 @@
                         <table width="50%" border="0" align="center" cellpadding="0" cellspacing="0" style="font-size:12px ">
                             <tbody>
                                 <tr><td width="41%" height="15">&nbsp;用户名:</td><td width="59%"><o><?php echo Yii::app()->user->name; ?></o></td></tr>
-                                <tr><td height="15">&nbsp;密码:</td><td><input name="User[password]" type="password" size="20"></td></tr>
-                                <tr><td height="15">&nbsp;confirm：</td><td><input name="User[password_repeat]" type="password" size="20"></td></tr>
+                                <tr><td height="15">&nbsp;密码:</td><td><input name="User[passwd]" type="password" size="20"></td></tr>
+                                <tr><td height="15">&nbsp;confirm：</td><td><input name="User[passwd_repeat]" type="password" size="20"></td></tr>
 
                                 <tr>
                                     <td height="20" colspan="2" align="center">

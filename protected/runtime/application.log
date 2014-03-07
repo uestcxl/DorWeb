@@ -4895,3 +4895,42 @@ Stack trace:
 REQUEST_URI=/DorWeb/index.php/user/create
 HTTP_REFERER=http://localhost/DorWeb/index.php/user/create
 ---
+2014/03/07 17:21:46 [error] [exception.CException] exception 'CException' with message 'User has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in /var/www/DorWeb/framework/base/CModel.php:289
+Stack trace:
+#0 /var/www/DorWeb/framework/base/CModel.php(260): CModel->createValidators()
+#1 /var/www/DorWeb/framework/base/CModel.php(304): CModel->getValidators('user_name')
+#2 /var/www/DorWeb/framework/web/helpers/CHtml.php(1414): CModel->isAttributeRequired('user_name')
+#3 /var/www/DorWeb/framework/web/widgets/CActiveForm.php(597): CHtml::activeLabelEx(Object(User), 'user_name', Array)
+#4 /var/www/DorWeb/protected/views/user/_form.php(19): CActiveForm->labelEx(Object(User), 'user_name')
+#5 /var/www/DorWeb/framework/web/CBaseController.php(126): require('/var/www/DorWeb...')
+#6 /var/www/DorWeb/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/DorWeb...', Array, true)
+#7 /var/www/DorWeb/framework/web/CController.php(869): CBaseController->renderFile('/var/www/DorWeb...', Array, true)
+#8 /var/www/DorWeb/protected/views/user/create.php(10): CController->renderPartial('_form', Array)
+#9 /var/www/DorWeb/framework/web/CBaseController.php(126): require('/var/www/DorWeb...')
+#10 /var/www/DorWeb/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/DorWeb...', Array, true)
+#11 /var/www/DorWeb/framework/web/CController.php(869): CBaseController->renderFile('/var/www/DorWeb...', Array, true)
+#12 /var/www/DorWeb/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /var/www/DorWeb/protected/controllers/UserController.php(93): CController->render('create', Array)
+#14 /var/www/DorWeb/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#15 /var/www/DorWeb/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/DorWeb/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /var/www/DorWeb/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /var/www/DorWeb/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /var/www/DorWeb/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /var/www/DorWeb/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /var/www/DorWeb/framework/web/CController.php(291): CFilterChain->run()
+#22 /var/www/DorWeb/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /var/www/DorWeb/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /var/www/DorWeb/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#25 /var/www/DorWeb/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#26 /var/www/DorWeb/index.php(15): CApplication->run()
+#27 {main}
+REQUEST_URI=/DorWeb/index.php/user/create
+HTTP_REFERER=http://localhost/DorWeb/index.php/site/login
+---
+2014/03/07 17:22:28 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in /var/www/DorWeb/protected/controllers/UserController.php (131)
+in /var/www/DorWeb/index.php (15)
+2014/03/07 17:22:28 [warning] [application] Failed to set unsafe attribute "password_repeat" of "User".
+in /var/www/DorWeb/protected/controllers/UserController.php (131)
+in /var/www/DorWeb/index.php (15)

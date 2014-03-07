@@ -82,7 +82,7 @@
             $i=0;
             foreach ($news as $new) { if($i<10){ $i++
         ?>
-        <li class="clearfix"><span class="xinwen"><a href="<?php echo $this->createUrl('news/index',array('id'=>$new->news_id))?>"><?php echo MyFunction::cutStr($new->title,70);?></a></span><span class="date"></span></li>
+        <li class="clearfix"><span class="xinwen"><a href="<?php echo $this->createUrl('news/view',array('id'=>$new->news_id))?>"><?php echo MyFunction::cutStr($new->title,70);?></a></span><span class="date"></span></li>
         <?php }}?>
     </ul>
 </div>
