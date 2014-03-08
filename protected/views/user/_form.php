@@ -7,9 +7,9 @@
 	'id'=>'user-form',
 	'enableAjaxValidation'=>false,
 )); ?>
-
+<br><br><br><br>
 	<p class="note" >请 填 写 真 实 注 册 信 息</p>
-
+<br><br>
 
 	<div class="row" >
 		<?php echo $form->labelEx($model,'user_name'); ?>

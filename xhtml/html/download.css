@@ -193,3 +193,7 @@ ul.content li {
 	color: #fff;
 	text-align: center;
 }
+
+center{
+	min-height: 400px;
+}
