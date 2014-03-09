@@ -6,7 +6,7 @@
             font-size: 15px;
         }
     </style>
-    <link href="<? echo Yii::app()->baseURL; ?>/xhtml/html/download.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo Yii::app()->baseURL; ?>/xhtml/html/download.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="<? echo Yii::app()->baseURL; ?>/xhtml/html/login.css">
     </head>
     <div class="holder"></div>
