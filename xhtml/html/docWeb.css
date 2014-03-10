@@ -18,9 +18,7 @@ img {
 body {
 	font-family: Helvetica, 'microsoft yahei', Arial, sans-serif;
 	color: #6b737a;	
-	background: url(images/blue_bg.png);
 }
-/* alter the footer pasition */
 body#feature a#featureLink {
 	background: #d8e5f1;
 }
@@ -44,7 +42,7 @@ body#feature a#featureLink {
 }
 .placeholder {
 	height: 30px;
-	background: url(images/blue_bg.png) repeat-x ;
+	background: url(images/blue_bg.png) repeat-x;
 	width: 100%;
 	min-width: 1120px;
 }
@@ -63,7 +61,7 @@ body#feature a#featureLink {
 .hey {
 	width: 100%;
 	min-width: 1120px;
-	min-height: 100px;
+	min-height: 30px;
 	background: url(images/blue_bg.png) repeat-x;
 }
 .shape {
@@ -232,7 +230,6 @@ body#feature a#featureLink {
 /*---------------------------------------------------------------------修改日期——2014.3.6----------------------*/
 .zhuye {
 	width: 1060px; 
-	padding-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -243,14 +240,13 @@ body#feature a#featureLink {
 .zuixinzixun {
 	width: 600px;
 	border-bottom: 2px solid #e74b3c;
-	margin-top: 10px;	
+	margin-top: 40px;	
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 5px;
 	text-indent: 25px;
 	color: #005da0;
 	font-family: "SimHei",Arial;
-	font-size: 17px;
 }
 .gengduo {
 	margin-left: 450px;
@@ -267,12 +263,12 @@ ul.zixun {
 	padding-left: 30px;
 	padding-bottom: 10px;
 	width: 570px;
-	font-size: 15px;
+	font-size: 14px;
 /*	border-bottom:  2px solid black;          */
 	background-color: #f7f7f7;
 }
 ul.zixun li {          
-	padding-top: 15px;
+	padding-top: 3px;
 	padding-bottom: 5px;
 	padding-left: 20px;
 	border-bottom: dashed 1px #CCCCCC;
@@ -288,21 +284,26 @@ ul.zixun li {
 	padding-right: 10px;
 }
 .top {
-	height: 300px;
+	float: right;
+	width: 303px;
+	height: 250px;
+	margin-right: 85px;
+	margin-top: 67px;
+	background: url(images/drop_shadow.gif) right bottom no-repeat;
 }
 .top img {
-	margin-top: 35px;
-	margin-left: 20px;
+	margin-top: -7px;
+	margin-left: -4px;
+	position: relative;
 }
 .zuixinziliao {
 	float: right;
 	width: 300px;
 	margin-right: 90px;
-	font-size: 17px;
 }
 .ziliao {
 	border-bottom: 2px solid #eeaf79;
-	margin-top: 10px;	
+	margin-top: 30px;	
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 5px;
@@ -314,12 +315,12 @@ ul.zixun li {
 	padding-top: 10px;
 	padding-left: 30px;
 	padding-bottom: 10px;
-	font-size: 15px;
+	font-size: 14px;
 /*	border-bottom:  2px solid black;          */
 	background-color: #f7f7f7;
 }
 ul.acm_ziliao li {          
-	padding-top: 15px;
+	padding-top: 3px;
 	padding-bottom: 5px;
 	padding-left: 20px;
 	border-bottom: dashed 1px #CCCCCC;
@@ -336,7 +337,7 @@ ul.acm_ziliao li {
 	background: url(images/dark_grey_bg.png) ;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	margin-top: 50px;
+	margin-top: 150px;
 	width: 100%;
 	min-width: 1120px;
 }
