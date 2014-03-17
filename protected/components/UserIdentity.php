@@ -23,7 +23,11 @@ class UserIdentity extends CUserIdentity
 		elseif($user->passwd!==$user->encrypt($this->password))
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
 		else
-			$this->errorCode=self::ERROR_NONE;
+			{	
+				$this->errorCode=self::ERROR_NONE;
+			}
 		return !$this->errorCode;
 	}
 }
+
+
